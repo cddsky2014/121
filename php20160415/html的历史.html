@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>html的历史</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: "΢���ź�"��Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>HTML</h1>
+
+<h2>HTML历史</h2>
+
+<ol>
+<li>创始人Tim Berners-Lee 蒂姆·伯纳斯·李(万维网联盟的主席)</li>
+</ol>
+
+<p><img src="http://i8.hexunimg.cn/2014-11-24/170717239.jpg" alt="" /></p>
+
+<blockquote>
+  <p>1955年6月8日，伯纳斯·李（Tim Berners-Lee）出生于英格兰伦敦西南部。</p>
+  
+  <p>父母都参与了世界上第一台商业电脑，曼切斯特1型（Manchester Mark I）的建造。</p>
+</blockquote>
+
+<p><img src="http://curation.cs.manchester.ac.uk/digital60/www.digital60.org/images/big_rebuild.jpg" alt="" /></p>
+
+<blockquote>
+  <p>1973年(18岁) 中学毕业，进入牛津大学王后学院深造(学院始建于1341年)，1976年(21岁)以一级荣誉获得物理学士学位毕业。</p>
+</blockquote>
+
+<pre><code>一级荣誉指“更加专业的知识“ 以及 “更加优异的成绩”
+</code></pre>
+
+<p><img src="http://i649.photobucket.com/albums/uu213/EileenAndromeda/Great%20Britan%20and%20Ireland%20Tour%202010/IMG_3579.jpg" alt="" /></p>
+
+<blockquote>
+  <p>1980年6月-9月间，他从CERN（欧洲核子研究组织）承包工程</p>
+  
+  <p>1980年，伯纳斯-李退出CERN，转而供职于约翰·普尔图形计算机系统有限公司</p>
+  
+  <p>1984年，一个偶然的机会，蒂姆来到瑞士的日内瓦，进入著名的由欧洲原子核研究会（CERN）建立的粒子实验室。该实验室的首席研究员是华裔物理学家、诺贝尔奖获得者——丁肇中。</p>
+</blockquote>
+
+<pre><code>是世界上最大的粒子物理学实验室，互联网的发祥地。
+</code></pre>
+
+<blockquote>
+  <p>在这里年轻的蒂姆接受了一项极富挑战性的工作：为了使欧洲各国的核物理学家能通过计算机网络及时沟通传递信息进行合作研究，委托他开发一个软件，以便使分布在各国各地物理实验室、研究所的最新信息、数据、图像资料可供大家共享。软件开发虽非蒂姆的本行，但强有力的诱惑促使他勇敢地接受了这个任务。</p>
+  
+  <p>1989年3 月，蒂姆向CERN递交了一份立项建议书，采用超文本文本技术（Hypertext）把CERN内部的各个实验室连接起来，在系统建成后，将可能扩展到全世界。这个激动人心的建议在CERN引起轩然大波，但这里终究是核物理实验室而非计算机网络研究中心，虽有人支持但最后仍没有被通过。</p>
+</blockquote>
+
+<pre><code>1989年是Internet历史上划时代的分水岭。的确WWW技术给Internet赋予了强大的生命力，Web浏览的方式给了互联网靓丽的青春。
+</code></pre>
+
+<blockquote>
+  <p>蒂姆并没有灰心，他花了2个月重新修改了建议书，加入了对超文本开发步骤与应用前景的阐述，用词恳切，并再一次呈递上去；这回终于得到了上司的批准。于是蒂姆得到了一笔经费，购买了一台<strong>NEXT计算机</strong>，并率领助手开发试验系统。</p>
+  
+  <p>1980年代后期超文本技术已经出现，当时还有国际间的超文本学术会议，每次都有上百篇的有关超文本的论文问世，但没有人能想到把超文本技术应用到计算机网络上来：超文本只是一种新型的文本而已。机遇偏爱有准备的人。有一次蒂姆端着一杯咖啡，走在实验室走廊上经过怒放的紫丁香花丛，盛夏幽雅的花香伴随着醇香的咖啡味飘入实验室，霎那间里蒂姆脑中灵感迸发：人脑可以透过互相联贯的神经传递信息（咖啡香和紫丁香），为什么不可以经由电脑文件互相连接形成"超文本"呢？</p>
+  
+  <p>服务器诞生说干就干，1989年仲夏之夜，蒂姆成功开发出世界上第一个Web服务器和第一个Web客户机。虽然这个Web服务器简陋得只能说是CERN的电话号码簿，它只是允许用户进入主机以查询每个研究人员的电话号码，但它实实在在是一个所见即所得的超文本浏览/编辑器。</p>
+  
+  <p>1989年12月，蒂姆为他的发明正式定名为World Wide Web，即我们熟悉的WWW；1991年5月WWW在 Internet上首次露面，立即引起轰动，获得了极大的成功被广泛推广应用。</p>
+  
+  <p>国际互联网Internet 在1960年代就诞生了，为什么没有迅速流传开来呢？其实，很重要的原因是因为联接到Internet需要经过一系列复杂的操作，网络的权限也很分明，而且网上内容的表现形式极端单调枯燥。</p>
+</blockquote>
+
+<h2>版本</h2>
+
+<pre><code>HTML Hypertext Markup Language  
+</code></pre>
+
+<ol>
+<li>1991年，为了方便数据的交流，发明了HTML</li>
+<li>1992年推出HTML2.0语言</li>
+<li>1996年成立W3C组织</li>
+<li>1999年HTML4.0.1，在这个时候，HTML本身的弊病体现出来了（标记单一，数据不能复用）</li>
+<li>XML来取代HTML  (可扩展标记语言)现在用户存储和传输数据 </li>
+<li>折中的方法，通过xhtml向xml过渡</li>
+<li>2000年XHTML1.0    (xml风格的HTML)</li>
+<li>XHTML在1.1版本，过度的体现XML的特点（XHTML就是XML），直接导致1.2版本胎死腹中，未能推出。（因为XHTML1.1某些使用方式当时某些主流浏览器根本不支持。）</li>
+<li>2006年Html 5 </li>
+<li>2014年10月29日，万维网联盟泪流满面地宣布，经过几乎8年的艰辛努力，HTML5标准规范终于最终制定完成了，并已公开发布。</li>
+</ol>
+
+<blockquote>
+  <p>我们学习的是HTML4.0.1版本，但是硬性的要求大家遵循已经提出的HTML5的标准。</p>
+  
+  <p>W3C组织：对网络标准制定的一个非营利组织，world wide web  Consortium（万维网联盟），它制定了HTML ,XHTML ,XML,CSS,html 5</p>
+</blockquote>
+
+<h2>奥运会开幕式</h2>
+
+<p><img src="http://i0.sinaimg.cn/IT/cr/2012/0807/2466344508.jpg" alt="" />  </p>
+
+<p><img src="http://img1.gtimg.com/finance/pics/hv1/234/15/1357/88242984.jpg" alt="" />  </p>
+
+<blockquote>
+  <p>2012伦敦奥运会开幕式在伦敦奥运会开幕式上，万维网的发明者蒂姆·伯纳斯·李（Tim Berners-Lee）爵士亮相，并打出了“<strong>This is for Everyone</strong>”字样，言外之意，互联网献给所有人。</p>
+  
+  <p>互联网发明者、英国人蒂姆·伯纳斯·李今晚作为科学明星，一样成为开幕式的亮点。坐在他熟悉的“电脑”前，接受到来自全世界的感谢。</p>
+  
+  <p>因无偿把万维网构想推广到全世界而改变人类生活方式，蒂姆·伯纳斯·李被英国人视为骄傲。正因如此，“感谢蒂姆”环节中，独自一人坐在“电脑”前的他享受了来自全世界的热烈掌声。</p>
+</blockquote>
+
+<h2>第1句话：认真听，认真记，认真练！</h2>
+
+<h2>第2句话：你无法知道每个问题的答案，但你一定要学会找到答案的方法！</h2>
+
+<h2>第3句话：不断的学习，不断的更新，不断的进步！</h2>
+
+<h2>第4句话：学习如逆水行舟，不进则退！</h2>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
