@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+</head>
+<body>
+
+	<!--
+		控件最重要的三个属性：type name value
+		
+		type: 
+			text 文本控件
+			password 密码控件
+			submit 提交按钮控件
+			radio 单选按钮
+				checked 选中checked="checked"
+			checkbox 复选框多选
+				checked 选中checked="checked"
+			file 文件控件
+		value 设置控件的默认值
+		disabled 禁用控件
+		placeholder 添加控件提示信息（一般用于文本输入控件）
+		select 下拉选择框
+			multiple 多选
+			selected 默认选中
+	-->
+	<form>
+		用户名：<input disabled type="text" name="uname" value="abcd"><br>
+		用户名：<input  type="text" name="uname" placeholder="请输入用户名"><br>
+		密码：<input type="password" name="pwd" value="abcd"><br>
+		性别：<input checked type="radio" name="sex" value="girl">女
+			<input type="radio" name="sex" value="boy">男 <br>
+		爱好：<input type="checkbox" value="1">古琴
+			<input checked type="checkbox" value="2">围棋
+			<input checked type="checkbox" value="3">书法
+			<input checked type="checkbox" value="4">国画<br>
+		头像：<input type="file" name="photo"><br>
+
+		籍贯：
+		<select disabled name="addr">
+			<option value="1">江苏</option>
+			<option value="2">安徽</option>
+			<option selected value="3">浙江</option>
+			<option value="4">山东</option>
+		</select><br>
+		<input type="submit" value="注册">	
+	</form>
+	
+</body>
+</html>
