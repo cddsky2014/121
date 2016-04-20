@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>样式优先级</title>
+	<style>
+	/*
+		样式优先级
+		行内样式>id选择器>类选择器>标签选择器
+	*/
+		div{color:red;font-size:25px;font-family:微软雅黑;}
+		.c1{color:green;font-size:25px;font-family:微软雅黑;}
+		#d1{color:blue;font-size:25px;font-family:微软雅黑;}
+	</style>
+</head>
+<body>
+	<div style="color:#33cc00;font-size:25px;font-family:微软雅黑;" class="c1" id="d1">颜色，字体，大小</div>
+
+
+	
+</body>
+</html>

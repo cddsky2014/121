@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器</title>
+	<style>
+		/*
+			标签选择器（html标签）
+		
+		div{color:blue;font-size:25px;font-family:微软雅黑;}*/
+		/*
+			id选择器
+			id属性值必须唯一不能重复
+		
+		#div1{color:blue;font-size:25px;font-family:微软雅黑;}
+
+		#div2{color:blue;font-size:25px;font-family:微软雅黑;}
+		*/
+		/*
+			class（类）选择器
+		
+		.s1{color:blue;font-size:25px;font-family:微软雅黑;}*/
+		
+		/*
+			级联选择器
+		*/
+		div span{color:red;font-size:25px;font-family:微软雅黑;}
+		.div2 span{}
+		#div3 span{}
+		.div2 .s2{}
+		.div2 #span1{}
+	</style>
+</head>
+<body>
+	<div class="div2" id="div3">
+		<span class="s2" id="span1">red，25px，微软雅黑</span>
+	</div>
+	<span>red，15px，微软雅黑</span>
+
+
+	
+	<div class="s1" id="div1">蓝色，25px，微软雅黑</div>
+	<p class="s1">红色，20px，微软雅黑</p>
+
+	
+	
+</body>
+</html>

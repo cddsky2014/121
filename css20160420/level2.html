@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>级联选择器的优先级</title>
+	<style>
+
+
+	/*
+		id选择器(100)>类选择器(10)>标签选择器(1)
+	
+	span{color:blue;font-size:25px;font-family:微软雅黑;}
+
+	#d1{color:green;font-size:25px;font-family:微软雅黑;}
+
+	#d2 span{color:red;font-size:25px;font-family:微软雅黑;}
+*/
+	/*
+		*通用选择器
+	*/
+
+	*{color:red;font-size:25px;font-family:微软雅黑;}
+
+	</style>
+</head>
+<body>	
+
+	<div id="d2">
+		<span id="d1">颜色，字体，大小</span>
+	</div>
+
+	<span>颜色，字体，大小</span>
+
+	<i>颜色，字体，大小</i>
+	
+</body>
+</html>
