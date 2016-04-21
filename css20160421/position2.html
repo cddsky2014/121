@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位（相对）</title>
+	<style>
+
+	/*
+		position:relative 相对定位
+		从文档流中抽出浮起，原来位置不会被后来元素填充
+
+	*/		
+		.d1{
+			width:200px;
+			height:200px;
+			background:#ffcc33;
+			position:relative;
+			left:300px;
+			bottom:-10px;
+		}
+		.d2{
+			width:200px;
+			height:200px;
+			background:#669999;
+		}
+	
+	</style>
+	
+</head>
+<body>
+	
+	<div class="d1"></div>
+	<div class="d2"></div>
+	
+</body>
+</html>

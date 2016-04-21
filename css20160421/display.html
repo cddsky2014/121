@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>display</title>
+	<style>
+		/*
+			行标签：不能换行的标签,
+				不能设置高度和宽度
+			块标签：可以自动换行的标签
+
+			display:
+				none 什么都没有
+				inline 把标签设置为行标签
+				block 把标签设置为块标签
+				inline-block 行级块标签
+		*/
+		.d1{border:1px solid red;
+			display:inline-block;
+			width:200px;
+			height:200px;
+		}
+		.s1{background:green;
+			
+			visibility:hidden;
+			width:200px;
+			height:200px;
+		}
+
+		/*
+			visibility属性
+
+			规定元素是否可见。
+			visible 默认值。元素是可见的。
+			hidden 元素是不可见的。
+		*/
+	</style>
+</head>
+<body>
+
+	<div class="d1">我是一个块标签</div>
+	<div class="d1">我是一个块标签</div>
+	<div class="d1">我是一个块标签</div>
+	<div class="d1">我是一个块标签</div>
+
+	<span class="s1">我是一个行标签</span>
+	
+</body>
+</html>
