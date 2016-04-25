@@ -9,12 +9,17 @@
 		/*最外层*/
 		.wrap{width:1000px;height:500px;background:#ffffcc;margin:0px auto;}
 		/*工具栏*/
-		.toolbar{height:40px;background:#ccffcc;}
+		.toolbar{height:40px;border-bottom:1px solid #efefef;}
 		.toolbar a{display:block;height:40px;line-height:40px;padding:0px 8px;}
+		.toolbar a:hover{text-decoration:underline;}
 
 		.toolbar li{float:left;}
 		.toolbar_l{float:left;}
 		.toolbar_r{float:right;}
+		/*logo*/
+		.logo{height:100px;background:#fff;}
+		.logo img{display:block;float:left;margin-top:10px;}
+		.logo form{float:left;margin-top:30px;}
 	</style>
 </head>
 <body>
@@ -34,6 +39,15 @@
 				<li><a href="###">注册</a></li>
 			</ul>
 		</div>
+
+		<div class="logo">
+			<img src="./img/logo.png" alt="">
+			<form>
+				<input type="text" name="key">
+				<input type="submit" name="sub" value="搜索">
+			</form>
+		</div>
+
 	
 	</div>
 
