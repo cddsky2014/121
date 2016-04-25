@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航菜单</title>
+
+	<style>
+	/*样式初始化*/
+	*{color:#171717;padding:0px;margin:0px;list-style-type:none;text-decoration:none;font-family:微软雅黑;}
+
+	/*设置导航菜单*/
+	.nav{height:45px;background:#01204f;}
+	.nav a{color:#fff;display:block;height:45px;line-height:45px;padding:0px 8px;}
+	.nav a:hover{background:#cc0000;}
+	.nav li{float:left;}
+
+	.nav2{display:none;background:#01204f;position:absolute;}
+	.nav2 li{clear:both;}
+	.nav1:hover .nav2{display:block;}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li><a href="###">首页</a></li>
+			<li><a href="###">新闻</a></li>		
+			<li class="nav1"><a href="###">更多</a>
+				<ul class="nav2">
+					<li><a href="###">首页</a></li>
+					<li><a href="###">新闻</a></li>
+					<li><a href="###">娱乐</a></li>
+					<li><a href="###">体育</a></li>
+				</ul>			
+			</li>
+			<li class="nav1"><a href="###">娱乐</a>
+				<ul class="nav2">
+					<li><a href="###">首页</a></li>
+					<li><a href="###">新闻</a></li>
+					<li><a href="###">娱乐</a></li>
+					<li><a href="###">体育</a></li>
+				</ul>			
+			</li>
+		</ul>
+	</div>
+	
+</body>
+</html>
