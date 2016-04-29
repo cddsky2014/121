@@ -20,24 +20,7 @@ echo substr($str,-6,-4);
 
 //中文乱码问题
 
-
-
-function mbsubstr($string, $beginIndex, $length){
-	if(strlen($string) < $length){
-		return substr($string, $beginIndex);
-	} 
-	$char = ord($string[$beginIndex + $length - 1]);
-	if($char >= 224 && $char <= 239){
-		$str = substr($string, $beginIndex, $length - 1);
-		return $str;
-	} 
-	$char = ord($string[$beginIndex + $length - 2]);
-	if($char >= 224 && $char <= 239){
-		$str = substr($string, $beginIndex, $length - 2);
-		return $str;
-	} 
-	return substr($string, $beginIndex, $length);
-}
+include("./mbsubstr.php");
 
 $str = "abc中文";
 echo mbsubstr($str,0,7);
