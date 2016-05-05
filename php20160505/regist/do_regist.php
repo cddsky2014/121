@@ -23,6 +23,12 @@
 		exit("用户名不存在<a href='./regist.php'>返回</a>");
 	}
 
+	if(isset($_POST["uname"])==true && clear_input($_POST["uname"])!=""){
+		$uname = clear_input($_POST["uname"]);
+	}else{
+		exit("用户名不存在<a href='./regist.php'>返回</a>");
+	}
+
 	exit();
 		
 	
