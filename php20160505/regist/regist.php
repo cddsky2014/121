@@ -9,7 +9,9 @@
 	<table>
 		<tr>
 			<td>用户名</td>
-			<td><input type="text" name="uname"></td>
+			<td><input type="text" name="uname">
+			<input type="hidden" value="uuuuname" name="uuname">
+			</td>
 		</tr>
 		<tr>
 			<td>密码</td>
@@ -50,20 +52,7 @@
 					<option value="4">上海</option>
 				</select>
 			</td>
-		</tr>
-
-		<tr>
-			<td>性格</td>
-			<td>
-				<select name="nature[]" multiple>
-					<option value="1">安静</option>
-					<option value="2">婉约</option>
-					<option value="3">温柔</option>
-					<option value="4">豪放</option>
-					<option value="6">风流</option>
-				</select>
-			</td>
-		</tr>
+		</tr>	
 
 		<tr>
 			<td>头像</td>
