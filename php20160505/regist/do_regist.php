@@ -13,7 +13,7 @@
 		$str = str_replace(" ","",$str);//删除空格
 		return $str;
 	}	
-	
+	/*
 	if(isset($_POST["uname"])==true){
 		$uname = clear_input($_POST["uname"]);
 		if($uname==""){
@@ -22,20 +22,28 @@
 	}else{
 		exit("用户名不存在<a href='./regist.php'>返回</a>");
 	}
-
+	*/
 	if(isset($_POST["uname"])==true && clear_input($_POST["uname"])!=""){
 		$uname = clear_input($_POST["uname"]);
 	}else{
 		exit("用户名不存在<a href='./regist.php'>返回</a>");
 	}
 
-	exit();
-		
-	
-
-
+	if(isset($_POST["pwd"])==true && clear_input($_POST["pwd"])!=""){
 		$pwd = $_POST["pwd"];
 		$pwd2 = $_POST["pwd2"];
+		if($pwd!=$pwd2){
+			exit("两次密码输入不一致<a href='./regist.php'>返回</a>");
+		}	
+	}else{
+		exit("密码非法<a href='./regist.php'>返回</a>");
+	}
+	
+
+		
+
+
+		
 		$sex = $_POST["sex"];
 		$hobby = $_POST["hobby"];
 		$pro = $_POST["pro"];
