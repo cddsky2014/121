@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>多文件上传</title>
+	<title>文件上传</title>
 </head>
 <body>
 	
 	<form action="do_upload.php" enctype="multipart/form-data" method="post">
-		<input multiple type="file" name="file[]">
-		<input type="submit" value="上传">
+		<input type="text" name="uname">
+		<input type="submit" name="sub" value="提交">
 	</form>
 
 	
