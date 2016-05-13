@@ -1,0 +1,28 @@
+*{margin:0px;padding:0px;color:#262626;text-decoration:none;list-style-type:none;font-size:14px;font-family:微软雅黑;}
+
+.clear{clear:both;}
+.wrap{width:1000px;margin:0px auto;}
+
+/*站顶工具条开始*/
+.tbar{height:40px;}
+.tbar_r li{float:left;}
+.tbar a{display:block;height:40px;padding:0px 5px;line-height:40px;}
+.tbar a:hover{text-decoration:underline;}
+/*站顶工具条结束*/
+
+.list li{width:180px;border:1px solid #bbbbbb;float:left;margin:8px;}
+
+.list li img{width:180px;}
+
+.list li span{display:block;padding:5px;}
+
+.sprice{font-size:20px;color:#ff6600;font-weight:bold;}
+
+.ptitle a:hover{text-decoration:underline;}
+
+
+/*购物车*/
+.car{width:100%;}
+
+/*.car td{border:1px solid red;}*/
+

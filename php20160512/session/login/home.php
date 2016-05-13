@@ -20,6 +20,8 @@ session_start();
 	<?php }else{?>
 	<a href="./login.php">登陆</a>|注册
 	<?php }?>
+
+
 	<div>
 		页面内容
 	</div>
