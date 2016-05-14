@@ -2,7 +2,7 @@
 header("content-type:text/html;charset=utf-8");
 	$uname = $_POST["uname"];
 	$pwd = $_POST["pwd"];
-	$time=$_POST["time"]*24*3600;
+	$time=$_POST["time"]*24*3600;//获取保存的时间
 
 	if($uname=="lucy" && $pwd=="123456"){
 		setCookie("uname",$uname,time()+$time);

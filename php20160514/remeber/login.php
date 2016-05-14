@@ -23,7 +23,7 @@
 		用户名：<input type="text" name="uname" value="<?php echo $uname;?>">
 		密码：<input type="password" name="pwd" value="<?php echo $pwd;?>">
 		保存：<select name="time">
-			<option value="">不保存</option>
+			<option value="0">不保存</option>
 			<option value="1">保存1天</option>
 			<option value="7">保存1周</option>
 		</select>
