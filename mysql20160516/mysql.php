@@ -73,4 +73,6 @@ create table users(uname varchar(200),age int(3),height float(4,2),intro text,bi
 	default charset=UTF8|gb2312|gbk：
 
 学生表
-	create table students (sid int(8) not null primary key auto_increment,sname varchar(200) not null,phone char(11) not null,sex int(1) default 3 not null,birth int(12) not null,intro text,height float(4,2) not null)engine=innodb default charset=gb2312
+	create table students (sid int(8) not null primary key auto_increment,sname varchar(200) not null,phone char(11) not null,sex int(1) default 3 not null,birth int(12) not null,intro text,height float(4,2) not null)engine=innodb default charset=utf8
+家长表
+	create table parents (pid int(8) not null primary key auto_increment,pname varchar(100) not null,sex int(1) default 2,sid int(8) not null )engine=innodb default charset=utf8
