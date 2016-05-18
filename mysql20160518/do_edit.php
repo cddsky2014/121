@@ -31,13 +31,15 @@ if($birth==false){
 }
 $intro = $_POST["intro"];
 
-$sql = "insert into students(sname,sex,tel,birth,intro,age) values('{$sname}','{$sex}','{$tel}','{$birth}','{$intro}','{$age}')";
+$sid = $_POST["sid"];
+
+$sql = "update students set sname='{$sname}',sex='{$sex}',age='{$age}',birth='{$birth}',intro='{$intro}' where sid='{$sid}'";
 
 $res = mysql_query($sql);
 if($res==false){
-	echo "添加失败<a href='./home.php'>返回</a>";
+	echo "编辑失败<a href='./home.php'>返回</a>";
 }else{
-	echo "添加成功<a href='./home.php'>返回</a>";
+	echo "编辑成功<a href='./home.php'>返回</a>";
 }
 
 

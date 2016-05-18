@@ -50,7 +50,12 @@ header("content-type:text/html;charset=utf-8");
 			<td><?php echo $row["birth"];?></td>
 			<td><?php echo $row["intro"];?></td>
 			<td><?php echo $row["tel"];?></td>
-			<td><a href="./del.php?sid=<?php echo $row["sid"];?>">删除</a></td>
+			<td>
+			<a href="./del.php?sid=<?php echo $row["sid"];?>">删除</a>
+			<a href="./edit.php?sid=<?php echo $row["sid"];?>">编辑</a>
+
+			
+			</td>
 		</tr>
 		<?php }?>
 	</table>
