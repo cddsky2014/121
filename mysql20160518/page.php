@@ -15,6 +15,7 @@ $size=2;//每页显示的条数
 $total = mysql_num_rows(mysql_query("select * from students"));
 $total_page = ceil($total/$size);//获取总页码
 //获取页码
+/*
 if(isset($_GET["p"])==false){
 	$pagenum = 1;
 }else{
@@ -27,6 +28,13 @@ if(isset($_GET["p"])==false){
 	}else{
 		$pagenum = 1;
 	}
+}
+*/
+
+if(isset($_GET["p"])==true && preg_match("/^[1-9]\d*$/",$_GET["p"])!=0 &&$_GET["p"]<=$total_page){
+	$pagenum = $_GET["p"];
+}else{
+	$pagenum = 1;
 }
 
 
