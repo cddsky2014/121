@@ -6,13 +6,11 @@ if(isset($_GET["sid"])==false){
 }
 
 $sid = $_GET["sid"];
-
+//获取当前记录的详细信息
 $sql="select * from students where sid='{$sid}'";
 $res = mysql_query($sql);
 $cur = mysql_fetch_assoc($res);
-
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>

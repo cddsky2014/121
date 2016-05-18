@@ -45,9 +45,11 @@ header("content-type:text/html;charset=utf-8");
 		<tr>
 			<td><?php echo $row["sid"];?></td>
 			<td><?php echo $row["sname"];?></td>
-			<td><?php echo $row["sex"];?></td>
+			<td><?php
+				$sex_arr = array(0=>"女",1=>"男",2=>"保密");	
+				echo $sex_arr[$row["sex"]];?></td>
 			<td><?php echo $row["age"];?></td>
-			<td><?php echo $row["birth"];?></td>
+			<td><?php echo date("Y-m-d",$row["birth"]);?></td>
 			<td><?php echo $row["intro"];?></td>
 			<td><?php echo $row["tel"];?></td>
 			<td>
