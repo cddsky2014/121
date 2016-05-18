@@ -10,12 +10,31 @@ include("./link.php");
 	4--5	3页  limit 4,2  (3-1)*2=4
 */
 $size=2;//每页显示的条数
-$pagenum = $_GET["p"];//当前页码
+
+//获取记录的总条数
+$total = mysql_num_rows(mysql_query("select * from students"));
+$total_page = ceil($total/$size);//获取总页码
+//获取页码
+if(isset($_GET["p"])==false){
+	$pagenum = 1;
+}else{
+	if(preg_match("/^[1-9]\d*$/",$_GET["p"])!=0){
+		if($_GET["p"]>$total_page){
+			$pagenum = $total_page;
+		}else{
+			$pagenum = $_GET["p"];//获取当前页码
+		}
+	}else{
+		$pagenum = 1;
+	}
+}
+
+
+
+//计算起始值
 $start = ($pagenum-1)*$size;
 $sql = "select * from students limit {$start},{$size}";
-
 $res = mysql_query($sql);
-
 
 ?>
 
@@ -25,6 +44,15 @@ $res = mysql_query($sql);
 	<meta charset="UTF-8">
 	<title>分页</title>
 </head>
+<?php
+	
+	//显示页码
+	for($i=1;$i<=$total_page;$i++){
+		echo "<a href='./page.php?p={$i}'>{$i}</a>";
+	}
+?>
+
+
 <body>
 		<table border=1>
 		<tr>
@@ -49,6 +77,9 @@ $res = mysql_query($sql);
 		</tr>
 		<?php }?>
 	</table>
+
+
+
 
 
 </body>
