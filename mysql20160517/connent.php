@@ -21,12 +21,13 @@
 $link = mysql_connect("127.0.0.1","root","");
 //打开数据库
 mysql_select_db("thinkshop",$link);
+mysql_query("set names utf8");//设置字符集
+
+
 //增删改查
 $sql = "select * from students";//查
 //$sql = "delete from students where sid='1'";
 //$sql = "update students set age='9999'";
-mysql_query("set names utf8");//设置字符集
-
 $res = mysql_query($sql);
 
 print_r(mysql_fetch_assoc($res));//0
