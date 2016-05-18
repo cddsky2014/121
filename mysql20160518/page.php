@@ -38,7 +38,6 @@ if(isset($_GET["p"])==true && preg_match("/^[1-9]\d*$/",$_GET["p"])!=0 &&$_GET["
 }
 
 
-
 //计算起始值
 $start = ($pagenum-1)*$size;
 $sql = "select * from students limit {$start},{$size}";
@@ -52,13 +51,16 @@ $res = mysql_query($sql);
 	<meta charset="UTF-8">
 	<title>分页</title>
 </head>
-<?php
-	
+<a href="?p=1;?>">&lt;&lt;</a>
+<a href="?p=<?php echo $pagenum-1;?>">&lt;</a>
+<?php	
 	//显示页码
 	for($i=1;$i<=$total_page;$i++){
-		echo "<a href='./page.php?p={$i}'>{$i}</a>";
+		echo "<a href='?p={$i}'>{$i}</a>";
 	}
 ?>
+<a href="?p=<?php echo $pagenum+1;?>">&gt;</a>
+<a href="?p=<?php echo $total_page;?>">&gt;&gt;</a>
 
 
 <body>
