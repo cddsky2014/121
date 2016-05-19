@@ -62,7 +62,6 @@ $res = mysql_query($sql);
 <a href="?p=<?php echo $pagenum+1;?>">&gt;</a>
 <a href="?p=<?php echo $total_page;?>">&gt;&gt;</a>
 
-
 <body>
 		<table border=1>
 		<tr>
