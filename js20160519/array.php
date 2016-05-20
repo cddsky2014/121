@@ -24,7 +24,6 @@
 	document.write(arr.pop());
 	document.write("<br>");	
 	document.write(arr);
-
 	document.write(arr.length);
 	
 
