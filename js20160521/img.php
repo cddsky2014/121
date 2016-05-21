@@ -7,22 +7,17 @@
 <body>	
 	<div style="width:400px;font-size:0px;" class="show_img">
 		<img id="bigimg" src="./img/4.jpg" alt="">
-		<img id="smallimg" onmousemove="change();" width="100px" src="./img/1.jpg" alt="">
-		<img width="100px" src="./img/2.jpg" alt="">
-		<img width="100px" src="./img/3.jpg" alt="">
-		<img width="100px" src="./img/4.jpg" alt="">	
+		<img onmousemove="change(this);" width="100px" src="./img/1.jpg" alt="">
+		<img onmousemove="change(this);" width="100px" src="./img/2.jpg" alt="">
+		<img onmousemove="change(this);" width="100px" src="./img/3.jpg" alt="">
+		<img onclick="change(this);" width="100px" src="./img/4.jpg" alt="">
 	</div>
-
 	<script>
-	//onmousemove 鼠标移动事件 
-
-	//bigimg==document.getElementById("bigimg");
-	
-	var change = function(){
-		var src = smallimg.getAttribute("src");
-		bigimg.setAttribute("src",src);
+	var change = function(th){
+		//console.log(th);
+		var src = th.src;
+		bigimg.src=src;
 	}
-	
 	</script>
 	
 </body>
