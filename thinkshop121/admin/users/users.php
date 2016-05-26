@@ -11,8 +11,7 @@ if(isset($_SESSION["admin"])==false){
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
-<body>
-	
+<body>	
 	<h1>用户管理</h1>
 </body>
 </html>
