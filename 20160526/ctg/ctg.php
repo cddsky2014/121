@@ -1,16 +1,7 @@
 <?php
-include("./link.php");
-include("./functions.php");
-
-$sql="select * from ts_goods_ctg";
-$res = mysql_query($sql);
-$ctgs = array();
-while($row=mysql_fetch_assoc($res)){
-	$ctgs[]=$row;
-}
-
+include("./core.php");
+$ctgs = db_query("goods_ctg");
 $ctgs=infinite_ctg($ctgs,array("0","fid","cid"));
-
 ?>
 
 <!doctype html>
@@ -20,7 +11,7 @@ $ctgs=infinite_ctg($ctgs,array("0","fid","cid"));
 	<title>分类</title>
 </head>
 <body>
-
+<a href="./add.php">添加分类</a>
 <table border=1>
 	<tr>
 		<td>cid</td>
@@ -37,11 +28,30 @@ $ctgs=infinite_ctg($ctgs,array("0","fid","cid"));
 		<input name="cname" type="text" value="<?php echo $v["cname"]?>">		
 		</td>
 		<td>
-		<?php 		
+		
+		<?php 
+		/*
+		<select name="ctg">
+		echo "<option value='0'>顶级分类</option>";	
+		foreach($ctgs as $v1){
+			$cname=$v1['cname'];
+			$cid=$v1['cid'];
+			$fid=$v1['fid'];
+			$level=$v1['level'];
+			if($v["fid"]==$v1["cid"]){
+				echo "<option value='{$cid}' selected >{$cname}</option>";
+			}else{
+				echo "<option value='{$cid}'>{$cname}</option>";
+			}			
+		}
+		</select>
+		*/
 		echo infinite_select($ctgs,"ctg","cid","cname",$v["fid"]);	
-		?>
+		?>		
 		</td>
-		<td><input type="submit" value="保存"></td>
+		<td><input type="submit" value="保存">
+			<a href="./del.php?cid=<?php echo $v["cid"];?>">删除</a>
+		</td>
 	</tr>
 	</form>
 	<?php }?>
