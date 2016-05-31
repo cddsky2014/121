@@ -1,6 +1,8 @@
-<?php 
+<?php
 	include("./link.php");
 	$ctg1=mysql_query("select * from ts_goods_ctg where fid=0");
+
+	$uname = isset($_SESSION["uname"])?$_SESSION["uname"]:"";
 ?>
 <!doctype html>
 <html lang="en">
@@ -26,6 +28,18 @@
 </head>
 <body style="padding-left:30px;">
 
+<?php if(!empty($uname)){?>
+	当前用户：<?php echo $uname;?>
+	<a href="./car.php">我的购物车</a>
+	<a href="./order.php">我的订单</a>
+<?php }else{?>
+	<a href="./login.php">登陆</a>
+<?php }?>
+
+
+
+<hr>
+
 <ul class="ctg">
 	<?php while($ctg1_row=mysql_fetch_assoc($ctg1)){
 		$cid = $ctg1_row["cid"];
@@ -45,20 +59,19 @@
 
 <?php
 
-	//$limit = "limit "
-
-	if(isset($_GET["ctg"])==true){
+	if(isset($_GET["ctg"])==true && empty($_GET["ctg"])==false){
 		$ctg = $_GET["ctg"];
 		$where = "where ctg='{$ctg}'";
 	}else{
-		$where = "";
+		$ctg = "";
+		$where = "where 1";
 	}	
 
 	if(isset($_GET["key"])==true){
 		$key=$_GET["key"];
 		$where .= " && pname like '%{$key}%'";
 	}
-
+//echo "select * from ts_goods {$where}";
 	//获取分页记录的条数
 	$total_rows = mysql_num_rows(mysql_query("select * from ts_goods {$where}"));
 	$pages = ceil($total_rows/2);//总页数
@@ -70,7 +83,7 @@
 ?>
 <form action="./home.php">
 	<input type="hidden" name="p" value="<?php echo $p;?>">
-	<input type="hidden" name="ctg" value="<?php echo $ctg;?>">
+	<input type="hidden" name="ctg" value="<?php echo $ctg;?>">	
 	<input type="text" name="key">
 	<input type="submit" value="搜索">
 </form>

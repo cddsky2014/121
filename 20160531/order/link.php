@@ -1,4 +1,6 @@
 <?php
+header("content-type:text/html;charset=utf-8");
+session_start();
 /*
 1、链接服务器
 2、选择数据库
