@@ -1,7 +1,7 @@
 <?php
 include("./link.php");
 $uid = $_SESSION["uid"];
-$sql = "select * from ts_orders where uid='{$uid}'";
+$sql = "select * from ts_orders where uid='{$uid}' order by oid desc";
 
 $res = mysql_query($sql);
 
@@ -36,7 +36,15 @@ $res = mysql_query($sql);
 		?>			
 			<tr>
 				<td><img width="40px;" src="../upload/<?php echo $pcur["thumb"];?>" alt=""></td>
-				<td><?php echo $pcur["pname"];?></td>
+				<td><?php echo $pcur["pname"];?></td>	
+				<?php 
+					if($row["status"]==3){
+						$pid = $pcur["pid"];
+						$oid = $row["oid"];
+						echo "<td><a href='./comment.php?pid={$pid}&oid={$oid}'>点评</a></td>";
+					}	
+				?>
+
 			</tr>		
 	
 		<?php }?>
