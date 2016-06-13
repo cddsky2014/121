@@ -32,7 +32,6 @@ class Hongqi{
 $hq = new Hongqi;//对象object
 echo $hq->name;//echo $name;
 echo $hq->age;//echo $age;
-
 var_dump($hq);
 var_dump(is_object($hq));
 
