@@ -11,7 +11,7 @@
 爱  好：酒、叫花鸡、武功秘籍
 技  能：降龙十八掌，打狗棒
  */
-
+//class 类名{....}
 class Hongqi{
     public  $name = '洪七';
     public  $nick = '北丐';
@@ -28,9 +28,14 @@ class Hongqi{
         echo '打狗棒';
     }
 }
+//new 类名；类的实例化
+$hq = new Hongqi;//对象object
+echo $hq->name;//echo $name;
+echo $hq->age;//echo $age;
+
+var_dump($hq);
+var_dump(is_object($hq));
 
 
-
-echo $name;
 
 
