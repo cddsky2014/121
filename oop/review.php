@@ -4,8 +4,7 @@ function connect($host='127.0.0.1',$uname='root',$pwd='',$dbname='thinkshop'){
     mysql_select_db($dbname);
     mysql_query('set names utf8');
 }
-function query($sql) {
-    connect();
+function query($sql) { 
     $res = mysql_query($sql);
     $arr = array();
     while ($row = mysql_fetch_assoc($res)) {
@@ -13,14 +12,12 @@ function query($sql) {
     }
     return $arr;
 }
-$r = query('select * from ts_users');
+
 function del($sql) {
-    connect();
     $res = mysql_query($sql);
     return $res;
 }
 function update( $sql){
-    connect();
     $res = mysql_query($sql);
     return $res;
 }
@@ -34,3 +31,12 @@ function add($sql){
         return false;        
     }
 }
+
+
+connect();    
+//$r = query('select * from ts_users');
+
+//print_r($r);
+
+
+sprintf('abc%s%s',123,'efg');
