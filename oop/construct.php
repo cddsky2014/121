@@ -3,12 +3,12 @@ class A{
     public $x=1;
     public $y=2;
     public function add(){
-           echo "add";       
-    }     
+           echo "add";
+    }
     public function test(){        
         $this->add();
     }   
-       public function __construct($a,$b) {
+    public function __construct($a,$b) {
         echo $a+$b; 
     }
     public function __destruct() {
