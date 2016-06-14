@@ -8,7 +8,7 @@ class Guoxiaotian{
         echo '啸转天地';
     }
 }
-class Guojing extends Guoxiaotian{
+class Guojing extends Guojing{
     public function kungfu(){
         echo '123';
     }  
