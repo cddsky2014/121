@@ -13,4 +13,4 @@ class Guojing extends Guojing{
         echo '123';
     }  
 }
-$gj = new Guoxiaotian;
+$gj = new Guojing;
