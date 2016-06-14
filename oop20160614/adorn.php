@@ -32,7 +32,3 @@ echo $gj->get();
     private     yes     no      no 
     protected   yes     yes     no    
  */
-
-
-
-
