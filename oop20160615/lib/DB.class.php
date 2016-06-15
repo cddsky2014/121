@@ -16,3 +16,7 @@ class DB {
          echo __FUNCTION__;        
     }
 }
+
+
+http://127.0.0.1/admin.php?c=admins&a=index
+http://127.0.0.1/admin.php?c=admins&a=add
