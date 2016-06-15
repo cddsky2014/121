@@ -2,8 +2,7 @@
 namespace NS1{    
     class A{
         public $name = 'NS1 A';
-    
-
+    }
 }
 namespace NS2{
     class A{
