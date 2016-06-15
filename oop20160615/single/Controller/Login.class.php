@@ -1,11 +1,11 @@
 <?php
 namespace Controller\Login;
-
-class Login{
-    public function index(){
+use Lib\DB\DB;
+class Login extends DB{
+    public function index(){        
+        print_r($this->query('ts_users'));
         echo 'login';
-    }
-    
+    }    
     public function login(){
         echo '登陆';
     }
@@ -13,5 +13,3 @@ class Login{
         echo '登陆2';
     }
 }
-
-http://127.0.0.1/oop20160615/single/home.php?m=Controller&c=Login&a=login2

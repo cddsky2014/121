@@ -1,4 +1,6 @@
 <?php
+
+include './lib/DB.class.php';
 //自动加载类
 function __autoload($name){
     $path = explode('\\', $name);//分割类名
@@ -9,9 +11,7 @@ function __autoload($name){
     is_file($file) or die($file.'-类文件不存在！');
     include $file;//引入类文件
 }
-
 $classname = $_GET['m'].'\\'.$_GET['c'].'\\'.$_GET['c'];
 $action = $_GET['a'];//login
 $home = new $classname;
 $home->$action();//login();
-
