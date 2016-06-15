@@ -1,4 +1,6 @@
 <?php
+
+include('./Core/DB.class.php');
 //自动加载类文件
 function __autoload($name){    
     $file = './'.str_replace('\\', '/', $name).'.class.php';
@@ -17,3 +19,5 @@ class Think{
 }
 $thik = new Think;
 $thik->run();
+
+//m=Home&c=Index&a=home
