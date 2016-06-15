@@ -2,7 +2,7 @@
 namespace Aplication\Admin\Controller;
 use \Core\DB;
 class Index extends DB{
-    public function users(){        
+    public function users(){
         $res = $this->query('ts_users');
         include('./Aplication/Admin/View/Index/users.php');
     }    
