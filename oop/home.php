@@ -1,5 +1,4 @@
 <?php
-
 include('./Core/DB.class.php');
 //自动加载类文件
 function __autoload($name){    
