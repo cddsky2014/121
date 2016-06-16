@@ -10,7 +10,7 @@
 		username <input type="text" name="username"><br>
 		password <input type="password" name="password"><br>
 		verifycode <input type="text" name="verifycode">
-		<img src="./code.php" alt="">
+		<img onclick="this.src='./code.php?'+Math.random();" src="./code.php" alt="">
 		<br>
 
 		<input type="submit" value="登陆">
