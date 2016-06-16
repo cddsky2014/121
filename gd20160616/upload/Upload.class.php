@@ -8,7 +8,7 @@
 // +----------------------------------------------------------------------
 // | Author: 麦当苗儿 <zuojiazi@vip.qq.com> <http://www.zjzit.cn>
 // +----------------------------------------------------------------------
-namespace Think;
+namespace Core;
 class Upload {
     /**
      * 默认上传配置
@@ -42,6 +42,39 @@ class Upload {
      * @var Object
      */
     private $uploader;
+
+
+	private function C($name=null, $value=null,$default=null) {
+    static $_config = array();
+    // 无参数时获取所有
+    if (empty($name)) {
+        return $_config;
+    }
+    // 优先执行设置获取或赋值
+    if (is_string($name)) {
+        if (!strpos($name, '.')) {
+            $name = strtoupper($name);
+            if (is_null($value))
+                return isset($_config[$name]) ? $_config[$name] : $default;
+            $_config[$name] = $value;
+            return;
+        }
+        // 二维数组设置和获取支持
+        $name = explode('.', $name);
+        $name[0]   =  strtoupper($name[0]);
+        if (is_null($value))
+            return isset($_config[$name[0]][$name[1]]) ? $_config[$name[0]][$name[1]] : $default;
+        $_config[$name[0]][$name[1]] = $value;
+        return;
+    }
+    // 批量设置
+    if (is_array($name)){
+        $_config = array_merge($_config, array_change_key_case($name,CASE_UPPER));
+        return;
+    }
+    return null; // 避免非法参数
+}
+
 
     /**
      * 构造方法，用于构造上传实例
@@ -251,8 +284,9 @@ class Upload {
      * @param array $config 驱动配置     
      */
     private function setDriver($driver = null, $config = null){
-        $driver = $driver ? : ($this->driver       ? : C('FILE_UPLOAD_TYPE'));
-        $config = $config ? : ($this->driverConfig ? : C('UPLOAD_TYPE_CONFIG'));
+		
+		$driver = $driver ? : ($this->driver       ? : $this->C('FILE_UPLOAD_TYPE'));
+        $config = $config ? : ($this->driverConfig ? : $this->C('UPLOAD_TYPE_CONFIG'));
         $class = strpos($driver,'\\')? $driver : 'Think\\Upload\\Driver\\'.ucfirst(strtolower($driver));
         $this->uploader = new $class($config);
         if(!$this->uploader){

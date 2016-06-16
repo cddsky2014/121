@@ -12,7 +12,6 @@
 		verifycode <input type="text" name="verifycode">
 		<img onclick="this.src='./code.php?'+Math.random();" src="./code.php" alt="">
 		<br>
-
 		<input type="submit" value="登陆">
 	</form>
 	
