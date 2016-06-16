@@ -1,3 +1,1 @@
-<?php
- print_r($res);
-
+<img src="?m=Demo&c=King&a=code" alt="">
