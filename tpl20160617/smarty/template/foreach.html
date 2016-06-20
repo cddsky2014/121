@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+{*
+	@key: 输出键名，格式 $v@key
+	@index:输出当前迭代索引，格式{$v@index}
+	@iteration:包含当前循环的迭代，总是以1开始，这点与index不同。每迭代一次值自动加1。{$v@iteration}
+	@first:当{foreach}循环第一个时first为真。
+	@last 当{foreach}迭代到最后时last为真。
+	@show show属性用在检测{foreach}循环是否无数据显示，show是个布尔值（true or false）。
+*}
+<ul>
+	{foreach $info as $v}
+		{if $v@first}
+			<b>这是第一次循环</b>
+		{elseif $v@last}
+			<b>这是最后一次循环</b>
+		{else}
+			<li>{$v}</li>
+		{/if}	
+	{/foreach}	
+</ul>
+
+{$info = array(1,2,3,4)}
+<ul>
+	{foreach $info as $v}
+		<li>{$v}</li>
+		{if $v@last}
+		<li>本次循环总次数{$v@total}</li>
+		{/if}
+	{foreachelse}
+		12345678
+	{/foreach}
+	{if $v@show==false}
+		没有值
+	{/if}
+
+</ul>
+
+	
+</body>
+</html>

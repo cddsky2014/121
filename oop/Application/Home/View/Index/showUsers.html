@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<table border='1px'>
+
+	<tr>
+		<td>用户名</td>
+		<td>email</td>
+		<td>手机</td>
+	</tr>
+	{foreach $res as $v}
+	<tr>
+		<td>{$v.uname}</td>
+		<td>{$v.email}</td>
+		<td>{$v.tel}</td>
+	</tr>
+	{/foreach}
+
+</table>
+	
+</body>
+</html>

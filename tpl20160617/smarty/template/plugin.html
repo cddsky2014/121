@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>插件</title>
+</head>
+<body>
+
+	<select name="foo" id="">
+		{foreach $info as $key=>$v}
+		<option value="{$key}">{$v}</option>
+		{/foreach}
+	</select>
+		
+	{html_options name=foo1 options=$info}
+
+	<br>
+
+	{$data = array(1,2,3,4,5,6,7,8,9,0)}
+
+	{$tr =  array('bgcolor="red"','bgcolor="blue"','bgcolor="green"')}
+
+	{html_table loop=$data cols='first,second,third,fourth' inner=rows tr_attr=$tr}
+
+	<hr>
+	{html_select_date start_year=1900 end_start=2016}
+
+</body>
+</html>

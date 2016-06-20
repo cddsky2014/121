@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+{$name}
+
+<ul>
+{for $i=101 to 100 max=10}    
+	<li>{$i}</li>
+{forelse}
+	<b>逻辑不正确</b>
+{/for}
+</ul>
+	
+</body>
+</html>

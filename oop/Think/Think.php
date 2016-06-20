@@ -2,12 +2,15 @@
 session_start();
 include './Think/functions.php';
 include './Think/Controller.class.php';
+
 //自动加载类文件
-function __autoload($name){    
+function autoload($name){  
     $file = './'.str_replace('\\', '/', $name).'.class.php';
-    is_file($file) or die($file.'文件不存在！');
-    include $file;
+    if(is_file($file)){
+        include $file;
+    }
 }
+spl_autoload_register('autoload');
 class Think{
     static public function start(){        
         $m=I('get.m','Home');//$m = $_GET['m']; 获取模块       
@@ -19,3 +22,5 @@ class Think{
     }
 }
 Think::start();
+
+

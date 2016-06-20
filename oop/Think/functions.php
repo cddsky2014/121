@@ -9,9 +9,25 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-/**
- * Think 系统函数库
- */
+function Smarty(){
+    require './Think/Ext/Smarty/Smarty.class.php';
+    $template_dir= './Application/'.I('get.m','Home').'/View/'.I('get.c');
+    if(is_dir($template_dir)==false){
+        //die('模版文件目录'.$template_dir.'不存在');
+    }
+    $smarty = new Smarty;
+    //$smarty->force_compile = true;
+    //$smarty->debugging = true;
+    //$smarty->caching = true;
+    $smarty->cache_lifetime = 120;
+    $smarty->template_dir =$template_dir;    
+    $smarty->compile_dir = './Application/Runtime';
+    $smarty->cache_dir = './Application/Runtime/Cache';
+    return $smarty;
+}
+
+
+
 
 /**
  * 获取和设置配置参数 支持批量定义
@@ -20,6 +36,8 @@
  * @param mixed $default 默认值
  * @return mixed
  */
+
+
 function C($name=null, $value=null,$default=null) {
     static $_config = array();
     // 无参数时获取所有
@@ -51,33 +69,6 @@ function C($name=null, $value=null,$default=null) {
     return null; // 避免非法参数
 }
 
-/**
- * 加载配置文件 支持格式转换 仅支持一级配置
- * @param string $file 配置文件名
- * @param string $parse 配置解析方法 有些格式需要用户自己解析
- * @return void
- */
-function load_config($file,$parse=CONF_PARSE){
-    $ext  = pathinfo($file,PATHINFO_EXTENSION);
-    switch($ext){
-        case 'php':
-            return include $file;
-        case 'ini':
-            return parse_ini_file($file);
-        case 'yaml':
-            return yaml_parse_file($file);
-        case 'xml': 
-            return (array)simplexml_load_file($file);
-        case 'json':
-            return json_decode(file_get_contents($file), true);
-        default:
-            if(function_exists($parse)){
-                return $parse($file);
-            }else{
-                E(L('_NOT_SUPPERT_').':'.$ext);
-            }
-    }
-}
 
 /**
  * 解析yaml文件返回一个数组
@@ -98,7 +89,8 @@ if (!function_exists('yaml_parse_file')) {
  * @return void
  */
 function E($msg, $code=0) {
-    throw new Think\Exception($msg, $code);
+	die($msg);
+    //throw new Think\Exception($msg, $code);
 }
 
 /**
@@ -541,17 +533,10 @@ function D($name='',$layer='') {
  * @param mixed $connection 数据库连接信息
  * @return Model
  */
-function M($name='', $tablePrefix='',$connection='') {
-    static $_model  = array();
-    if(strpos($name,':')) {
-        list($class,$name)    =  explode(':',$name);
-    }else{
-        $class      =   'Think\\Model';
-    }
-    $guid           =   (is_array($connection)?implode('',$connection):$connection).$tablePrefix . $name . '_' . $class;
-    if (!isset($_model[$guid]))
-        $_model[$guid] = new $class($name,$tablePrefix,$connection);
-    return $_model[$guid];
+function M($table) {
+    $obj = new \Think\Model\DB('127.0.0.1'); 
+    $obj->table=$table;
+    return $obj;
 }
 
 /**

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>变量调节器</title>
+</head>
+<body>
+	
+	{$name = 'rOSe TOM'}
+	{$name|capitalize:false}
+
+	{strtoupper($name)}
+	{*
+	cat
+	count_characters
+	upper
+	lower
+	date_format
+	replace
+	nl2br
+	*}
+
+	<hr>
+
+	{time()|date_format:'time:%H:%M:%S'|upper}
+
+	<hr>
+
+	{config_load file='./foo.conf'}
+	{#host#}
+	{#username#}
+	<hr>
+	{assign var='arr' value=['config'=>['host'=>'127.0.0.3']]}
+	{$arr['config']['host']}
+	{$arr.config.host}
+	<hr>
+	{$smarty.config.host}
+	
+	
+</body>
+</html>
