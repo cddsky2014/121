@@ -12,8 +12,9 @@
 function Smarty(){
     require './Think/Ext/Smarty/Smarty.class.php';
     $template_dir= './Application/'.I('get.m','Home').'/View/'.I('get.c');
-    if(is_dir($template_dir)==false){
+    if(!is_dir($template_dir)){
         //die('模版文件目录'.$template_dir.'不存在');
+		$template_dir='./Application/'.I('get.m','Home').'/View/';
     }
     $smarty = new Smarty;
     //$smarty->force_compile = true;

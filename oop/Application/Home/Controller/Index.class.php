@@ -5,47 +5,32 @@ use \Think\Controller;
 
 class Index extends Controller{
 
-	public function showUsers(){
-		
-			
-
-		$res = M('ts_users')->query();
-		
-		$this->smarty->assign('res',$res);
-
-		$this->smarty->display('showUsers.html');
-		
-	}
-	
-	public function editUser(){
-		$uid = I('get.uid');//$_GET['uid']
-		$res = M('ts_users')->query('*',"uid='{$uid}'");
-
-		$this->smarty->assign('res',$res);
-
-		$this->smarty->display('editUser.html');
+	public function home(){
+		$this->smarty->display('home.html');
 	}
 
-	public function doEditUser(){
-		//print_r(I('post.'));//$_POST
-		
+	public function regist(){
+		$this->smarty->display('regist.html');
+	}
+
+	public function doRegist(){
+
 		$this->verify->check(I('post.code')) or die('验证码输入错误');
-
-		$uid = I('get.uid');
- 		$data = array(
+		
+		$data = array(
 			'uname'=>I('post.uname'),	
-			'email'=>I('post.email'),	
+			'pwd'=>md5(I('post.pwd')),
 			'tel'=>I('post.tel')
 		);
-		M('ts_users')->edit($data,"uid='{$uid}'");
-		header('location:?m=Home&c=Index&a=showUsers');
-	}
+		M('ts_users')->add($data);
 
+		header('location:?m=Home&c=Index&a=home');
+	}
 
 	public function verify(){
-		$this->verify->length=3;
 		$this->verify->fontSize=14;
-		$this->verify->codeSet='012345';
+		$this->verify->codeSet='12345';
 		$this->verify->entry();
 	}
+	
 }
