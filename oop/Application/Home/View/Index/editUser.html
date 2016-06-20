@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<form action="?m=Home&c=Index&a=doEditUser&uid={$res[0]['uid']}" method="post">
+		用户名：<input name="uname" type="text" value="{$res[0]['uname']}"><br>
+		emial:<input name="email" type="text" value="{$res[0]['email']}"><br>
+		手机：<input name="tel" type="text" value="{$res[0]['tel']}"><br>
+		验证码：<input name="code" type="text">
+		<img onclick="this.src='?m=Home&c=Index&a=verify&'+Math.random();" src="?m=Home&c=Index&a=verify" alt="">
+		<br>
+		<input type="submit" value="编辑"><br>
+	
+	</form>
+
+
+</body>
+</html>
