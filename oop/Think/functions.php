@@ -19,9 +19,9 @@ function Smarty(){
     $smarty = new Smarty;
     //$smarty->force_compile = true;
     //$smarty->debugging = true;
-    $smarty->caching = true;
-	$smarty->left_delimiter = "<{";     //配置模版标签的左边界符
-	$smarty->right_delimiter= "}>";     //配置模版标签的右边界符
+    $smarty->caching = false;//开启或关闭缓存
+	$smarty->left_delimiter = "{";     //配置模版标签的左边界符
+	$smarty->right_delimiter= "}";     //配置模版标签的右边界符
 
     $smarty->cache_lifetime = 120;
     $smarty->template_dir =$template_dir;    
