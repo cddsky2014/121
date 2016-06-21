@@ -14,7 +14,7 @@ class Home extends Controller{
 		$this->smarty->assign('info',$info);
 
 
-		$this->smarty->display('modify.html');
+		$this->smarty->display('modify.html','abcdef');
 	}
 
 	public function regist(){
