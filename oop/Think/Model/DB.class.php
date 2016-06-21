@@ -21,6 +21,15 @@ class DB {
         }
         return $arr;
     }
+
+	public function exeSql($sql) {
+        $res = mysql_query($sql);
+        $arr = array();
+        while ($row = mysql_fetch_assoc($res)) {
+            $arr[] = $row;
+        }
+        return $arr;
+    }
     public function add($data) {
         $fields = '';
         $values = '';
