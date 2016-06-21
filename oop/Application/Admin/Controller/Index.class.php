@@ -15,5 +15,9 @@ class Index extends Controller{
 
 	}
 
+	public function valid(){
+		var_dump($this->valid->isEmail('www@qq.com'));
+	}
+
 
 }
