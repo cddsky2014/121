@@ -174,14 +174,27 @@ WHERE
 ==
 select * from students s where s.sex in (1,2)
 
-from 接子查询
-
+from 后链接子查询（临时表）
 SELECT * from (SELECT * from students s 
 JOIN sexs x on s.sex=x.xid) sx
 where sx.age>100
-
 ==
-
 SELECT * from students s 
 JOIN sexs x on s.sex=x.xid
 where s.age>100
+
+复制表结构
+Create table tb2 like tb1;
+
+复制表的数据
+将表tb1中的所有数据全部都放到tb2表中去
+Insert into tb2 select * from tb1; 
+	insert into sexs2 select * from sexs;
+
+将表tb1 中的部分查出的列 放到表tb2的某些列中
+Insert into tb2(column list) select column list from tb1;
+	insert into students2 (sname) select sname from students;
+
+将表tb1 中根据条件查询出的部分数据  放到表tb2中
+Insert into tb2(column list) select column list from tb1 where uid>100;
+	insert into students2 select * from students where age>100;
