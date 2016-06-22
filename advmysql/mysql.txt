@@ -126,3 +126,31 @@ WHERE
 		WHERE
 			s.cid = 2
 	)
+
+
+去除最大值和最小值
+
+SELECT
+	s.sname,
+	m.chinese
+FROM
+	students s
+JOIN marks m ON m.sid = s.sid
+WHERE
+	s.cid = 1 && m.chinese < ANY (
+		SELECT
+			m.chinese
+		FROM
+			students s
+		JOIN marks m ON m.sid = s.sid
+		WHERE
+			s.cid = 1
+	) && m.chinese > ANY (
+		SELECT
+			m.chinese
+		FROM
+			students s
+		JOIN marks m ON m.sid = s.sid
+		WHERE
+			s.cid = 1
+	)
