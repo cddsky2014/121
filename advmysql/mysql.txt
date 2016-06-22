@@ -100,3 +100,29 @@ WHERE
 	)
 
 
+
+>any 大于查询中的最小值
+<any 小于查询中的最大值
+=any 等于查询中任意值 in
+
+>all 大于查中的最大值
+<all 小于查询中的最小值
+=all 等于查询中所有值
+
+
+SELECT
+	s.sname,
+	m.chinese
+FROM
+	students s
+JOIN marks m ON m.sid = s.sid
+WHERE
+	s.cid = 1 && m.chinese < All (
+		SELECT
+			m.chinese
+		FROM
+			students s
+		JOIN marks m ON m.sid = s.sid
+		WHERE
+			s.cid = 2
+	)
