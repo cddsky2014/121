@@ -39,7 +39,6 @@ FROM
 	students s
 INNER JOIN classes c ON c.cid = s.cid
 INNER JOIN marks m ON s.sid=m.sid
-
 GROUP BY s.cid
 
 统计每个学生的总分，并查询总分大于250分的学生信息
@@ -59,5 +58,45 @@ INNER JOIN classes c ON c.cid = s.cid
 INNER JOIN marks m ON s.sid=m.sid
 
 where m.math+m.chinese+m.english>250
+
+
+
+自查询
+把自身作为第二张表链接后查询。
+
+SELECT
+	*
+FROM
+	students s1
+left join students s2 on s1.lid=s2.sid
+
+
+
+多表查询
+
+SELECT
+	*
+FROM
+	students s,
+	classes c,
+	marks m
+WHERE
+	s.cid = c.cid && s.sid = m.sid
+
+
+嵌套查询（子查询）
+主查询的查询条件是由子查询提供
+
+SELECT
+	*
+FROM
+	students
+WHERE
+	sex IN (
+		SELECT
+			xid from sexs
+		WHERE
+			xid IN (1, 2)
+	)
 
 
