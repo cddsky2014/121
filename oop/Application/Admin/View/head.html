@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+	{if isset($smarty.session.admin)}
+	欢迎：{$smarty.session.admin}
+	<a href="?m=Admin&c=Admin&a=logout">注销</a>
+	{/if}

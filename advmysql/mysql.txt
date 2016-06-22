@@ -1,0 +1,63 @@
+内链接 （使用最多的一种）inner join
+
+	- 内链接查询是mysql中的多表连接中一种。
+	- 思路为将其中两个表的匹配结果再和第三个表进行匹配，可以节省匹配次数和提高检索速度。
+
+	INNER JOIN 表名 ON 筛选条件
+
+查询出考试的学生的所有的信息
+SELECT
+	s.sid,
+	s.sname 姓名,
+	s.age 年龄,
+	c.cid,
+	s.cid,
+	c.cname 班级,
+	m.sid,
+	m.chinese 国文,
+	m.math 数学,
+	m.english 英文
+FROM
+	students s
+INNER JOIN classes c ON c.cid = s.cid
+INNER JOIN marks m ON s.sid=m.sid
+
+
+统计每个班级各科成绩的平均分、最高分、最低分、总分
+SELECT
+	s.sid,
+	s.sname 姓名,
+	s.age 年龄,
+	c.cid,
+	s.cid,
+	c.cname 班级,
+	m.sid,
+	avg(m.chinese) 国文平均分,
+	sum(m.math) 数学总分,
+	min(m.english) 英文最低分
+FROM
+	students s
+INNER JOIN classes c ON c.cid = s.cid
+INNER JOIN marks m ON s.sid=m.sid
+
+GROUP BY s.cid
+
+统计每个学生的总分，并查询总分大于250分的学生信息
+SELECT
+	s.sid,
+	s.sname 姓名,
+	s.age 年龄,
+	c.cid,
+	s.cid,
+	c.cname 班级,
+	m.sid,
+	m.math+m.chinese+m.english  总分
+
+FROM
+	students s
+INNER JOIN classes c ON c.cid = s.cid
+INNER JOIN marks m ON s.sid=m.sid
+
+where m.math+m.chinese+m.english>250
+
+
