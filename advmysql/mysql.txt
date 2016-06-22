@@ -154,3 +154,34 @@ WHERE
 		WHERE
 			s.cid = 1
 	)
+
+
+exits 子查询中记录是否存在，如果有记录返回，主查询中的记录就符合条件，否则就不符合条件
+
+SELECT
+	*
+FROM
+	students s
+WHERE
+	EXISTS (
+		SELECT
+			*
+		FROM
+			sexs x
+		WHERE
+			x.xid IN (1, 2) && x.xid = s.sex
+	)
+==
+select * from students s where s.sex in (1,2)
+
+from 接子查询
+
+SELECT * from (SELECT * from students s 
+JOIN sexs x on s.sex=x.xid) sx
+where sx.age>100
+
+==
+
+SELECT * from students s 
+JOIN sexs x on s.sex=x.xid
+where s.age>100
