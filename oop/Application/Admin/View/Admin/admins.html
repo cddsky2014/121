@@ -1,0 +1,25 @@
+{include file="../head.html"}
+<a href="?m=Admin&c=Admin&a=addAdmin" class="btn btn-primary btn-xs">添加</a>
+<table class="table">
+	<tr>
+		<td>用户名</td>
+		<td>头像</td>
+		<td>邮箱</td>
+		<td>手机</td>
+		<td>操作</td>
+	</tr>
+	{foreach $admins as $v}		
+	<tr>
+		<td>{$v['uname']}</td>
+		<td><img src="./Uploads/{$v['photo']}" alt=""></td>
+		<td>{$v['email']}</td>
+		<td>{$v['tel']}</td>
+		<td>
+			<a href="?m=Admin&c=Admin&a=editAdmin&uid={$v['uid']}" class="btn btn-primary btn-xs">编辑</a>
+		</td>
+	</tr>		
+	{/foreach}
+</table>
+
+
+{include file="../foot.html"}

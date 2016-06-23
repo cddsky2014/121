@@ -43,7 +43,7 @@ class Admin extends Controller{
 	}
 
 	public function verify(){
-	
+		
 		$this->verify->codeSet='123456789';
 		$this->verify->entry();
 	}
@@ -52,5 +52,53 @@ class Admin extends Controller{
 	public function logout(){
 		session_destroy();
 		header('location:?m=Admin&c=Admin&a=login');
+	}
+
+
+	public function admins(){		
+		$res = M('ts_admins')->query();
+		$this->smarty->assign('admins',$res);
+		$this->smarty->display('admins.html');
+	}
+
+	public function editAdmin(){
+		$uid = I('get.uid');
+		$res = M('ts_admins')->query('*',"uid='{$uid}'");
+		$this->smarty->assign('admin',$res[0]);
+		$this->smarty->display('editAdmin.html');
+	}
+
+	public function doEditAdmin(){
+		$uid = I('get.uid');
+		$data = array(
+			'email'=>I('post.email'),
+			'tel'=>I('post.tel'),
+			'mtime'=>time()			
+		);
+		M('ts_admins')->edit($data,"uid='{$uid}'");
+		header('location:?m=Admin&c=Admin&a=admins');
+	}
+
+	public function addAdmin(){
+		$this->smarty->display('addAdmin.html');	
+	}
+
+	public function doAddAdmin(){
+
+		$info = $this->upload->upload();
+		$img_url = $info['file']['savepath'].$info['file']['savename'];
+
+		$this->image->open("./Uploads/{$img_url}")->thumb(100,100,1)->save("./Uploads/{$img_url}");
+
+		$data = array(
+			'uname'=>I('post.uname'),
+			'pwd'=>I('post.pwd'),
+			'email'=>I('post.email'),
+			'tel'=>I('post.tel'),
+			'photo'=>$img_url,
+			'mtime'=>time()			
+		);
+		M('ts_admins')->add($data);
+		header('location:?m=Admin&c=Admin&a=admins');	
 	}
 }

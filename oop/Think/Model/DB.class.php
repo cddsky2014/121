@@ -63,7 +63,7 @@ class DB {
             $fields .= sprintf('%s=\'%s\',', $k, $v);
         }
         $fields = rtrim($fields, ',');
-        $sql = sprintf('update %s set %s where %s', $this->table, $fields, $where);
+		echo $sql = sprintf('update %s set %s where %s', $this->table, $fields, $where);
         return mysql_query($sql);
     }
 }
