@@ -1,0 +1,69 @@
+主键索引（primary key）
+唯一索引（unique）
+常规索引（index）
+全文索引（fulltext）
+
+- 查看索引 show index from 表名
+
+Uon_unique	索引是否包含重复词
+Key_name	索引名称
+Seq_in_index	索引开始数字
+Column_name	列名称
+Collation	索引存储形式
+Cardinality	索引中唯一值的数目的估计值。通过运行ANALYZE TABLE或myisamchk -a可以更新。基数根据被存储为整数的统计数据来计数，所以即使对于小型表，该值也没有必要是精确的。基数越大，当进行联合时，MySQL使用该索引的机会就越大。
+Sub_part	如果列只是被部分地编入索引，则为被编入索引的字符的数目。如果整列被编入索引，则为NULL。
+Packed		指示关键字如何被压缩。如果没有被压缩，则为NULL。
+Null		如果列含有NULL，则含有YES。如果没有，则该列含有NO
+Index_type	用过的索引方法（BTREE, FULLTEXT, HASH）。
+Comment		注释
+
+- 创建索引
+ create index 索引名 on 表（字段1,字段2）//常规索引（index）
+ create unique index 索引名 on 表（字段1,字段2）//唯一索引（unique）
+ PRIMARY KEY (字段名) //主键索引（primary key）
+
+- 创建短索引
+
+ title  varchar(120)   
+
+ create 索引类型 索引名 on 表(字段(20),字段(20))
+
+ create index title on news(title(10))
+
+- 创建全文索引
+
+ Create  fulltext index 索引名称 on tbname(column);
+
+ 使用全文索引
+
+ Select * from tbname  WHERE MATCH (索引字段) AGAINST (关键字);
+
+ mysql默认不支持中文的全文索引，解决方法请参照以下链接
+
+ https://code.google.com/archive/p/mysqlcft/
+
+ http://zyan.cc/post/356/
+
+
+
+- 删除索引
+ drop index 索引名 on 表名
+ alter table 表名 drop index 索引名 ;
+ alter table 表名 drop primary key ;
+
+
+
+
+- 建立索引注意要点
+
+ - 检索速度:主键-->唯一-->普通--->没有索引
+ - 索引内容匹配的长度: 能建立短索引尽量的建立短索引
+ - 尽量建立多列索引(但是多列索引不能过多)
+ - 建立的索引(字段)必须是在where后经常频繁出现的字段
+ - 表的主键、外键必须有索引
+ - 数据量超过300条记录的表应该有索引
+ - 经常与其他表进行连接的表，在连接字段上应该建立索引（外键）
+ - 经常出现在Where子句中的字段，特别是大表的字段，应该建立索引
+ - 索引应该建在选择性高的字段上
+ - 对于大的文本字段甚至超长字段应该建立全文索引
+
