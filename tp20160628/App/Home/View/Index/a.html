@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<table border=1>
+		{foreach $res as $v}
+		<tr>
+			<td>{$v['uid']}</td>
+			<td>{$v['uname']}</td>
+			<td>{$v['email']}</td>
+			<td>{$v['tel']}</td>
+		</tr>
+		{/foreach}
+	</table>
+</body>
+</html>

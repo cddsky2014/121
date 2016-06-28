@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+	<a href="{U('Index/addAdmin')}">添加</a>
+
+	<table class="table">
+		{foreach $admins as $v}
+		<tr>
+			<td>{$v.uname}</td>
+			<td>{$v.tel}</td>
+			<td>{$v.email}</td>
+			<td>
+				<a href="{U('Index/edit',['uid'=>$v['uid']],'xml')}" class="btn btn-primary btn-xs">编辑</a>
+			</td>
+
+		</tr>
+		{/foreach}
+	
+	</table>
+
+	
+
+	
+	
+</body>
+</html>

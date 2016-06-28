@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<form action="{U('Index/doEdit')}" method="post">
+		<input type="hidden" name="uid" value="{$admin['uid']}">
+
+		<input type="text" value="{$admin['uname']}" name="uname"><br>
+		<input type="text" value="{$admin['email']}" name="eamil"><br>
+		<input type="text" value="{$admin['tel']}" name="tel">
+		<input type="submit" value="提交"><br>
+	
+	</form>
+	
+</body>
+</html>
