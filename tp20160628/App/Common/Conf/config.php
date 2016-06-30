@@ -11,4 +11,6 @@ return array(
 	'DB_CHARSET'=> 'utf8', // 字符集
 	'DB_DEBUG'  =>  false, // 数据库调试模式 开启后可以记录SQL日志 3.2.3新增
 	'TMPL_ENGINE_TYPE'=>'Smarty',
+
+	'ACTION_SUFFIX' => 'Action', // 操作方法后缀
 );
