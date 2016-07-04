@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<div id="d1">我是div1</div>
+<div id="d2">我是div2</div>
+<div id="d3">我是div3</div>
+<script src="./jquery-3.0.0.min.js"></script>
+
+<script>
+/*
+	$('div').click(function(){		
+		//console.log($('#d1').text());
+		console.log('我是事件');
+	});
+
+	$('div').mouseout(function(){		
+		//console.log($('#d1').text());
+		console.log('我是事件');
+	});
+
+	$('div').bind('click mouseout',function(){
+		console.log('我是事件');
+	});
+
+	$('div').unbind('mouseout');
+*/
+
+$('#d1').hover(function(){
+	$(this).css('background','red');
+},function(){
+	$(this).css('background','green');
+});
+</script>
+
+</body>
+</html>

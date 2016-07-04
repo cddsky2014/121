@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {border:1px solid red;height:200px;margin:5px;}
+	</style>
+</head>
+<body>
+
+<ul>  
+    <li>li1</li>
+    <li>li2</li>
+    <li class="start">li3</li>
+    <li>li4</li>
+    <li>li5</li>
+    <li>li6</li>
+</ul>
+
+<div>sdsdsd
+	<p class="p1">dsdsds</p>
+	<p class="p2">dsdsds</p>
+	<p class="p2">dsdsds</p>
+	<p class="p3">dsdsds</p>
+</div>
+
+<script src="./jquery-3.0.0.min.js"></script>
+<script>
+
+//$('li').parent().css('background','yellow');
+//$('p').parent().css('background','yellow');
+
+//$('.start').next().css('background','yellow');
+//$('.start').nextAll().css('background','yellow');
+//$('.start').siblings().css('background','yellow');
+//$('.start').index();
+$('div').children('[class=p2]').css('background','yellow');
+
+</script>
+</body>
+</html>

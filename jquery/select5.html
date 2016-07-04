@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {border:1px solid red;height:100px;margin:5px;}
+	</style>
+</head>
+<body>
+
+<div style="border:1px solid;">
+    <p>The first child.</p>
+    <p>The last child.</p>
+</div>
+
+<div style="border:1px solid;">
+    <p>The only child.</p>
+</div>
+<div style="border:1px solid;">	
+	<p>The child.</p>  
+	<p>The child.</p>  
+	<p>The last child.</p>    
+</div>
+
+<div style="border:1px solid;">	
+	<p>The child.</p>  
+	<p>The child.</p>  
+	<p>The last child.</p>    
+</div>
+
+<div style="border:1px solid;">	
+    <span>The first child.</span>
+	<p>The last child.</p>    
+</div>
+
+<script src="./jquery-3.0.0.min.js"></script>
+<script>
+
+$('div p:nth-child(2)').css('background','yellow');
+
+</script>
+</body>
+</html>

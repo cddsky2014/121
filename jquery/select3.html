@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {border:1px solid red;height:100px;margin:5px;}
+	</style>
+</head>
+<body>
+
+<div class="a" id="d1">1abc</div>
+<div class="abc">2bcd</div>
+<div class="abcd" id="d2">3efg</div>
+<div class="abcde">4sbcdefg</div>
+<div class="xqy">5</div>
+<p id="p1">p1</p>
+
+<script src="./jquery-3.0.0.min.js"></script>
+<script>
+//$('div[id]').css('background','yellow');
+//$('[class*=x]').css('background','yellow');
+$('div:contains(b)').css('background','yellow');
+</script>
+</body>
+</html>
