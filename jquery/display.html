@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css</title>
+	<style>
+		.d1{height:100px;width:100px;background:#ccffff;}
+		.d2{height:200px;width:200px;background:#ffccff;}
+	</style>
+</head>
+<body>
+<div class="d1">hello</div>
+
+<input class="show" type="button" value="显示">
+<input class="hide"" type="button" value="隐藏">
+<input class="sh"" type="button" value="显示隐藏">
+
+
+<script src="./jquery-3.0.0.min.js"></script>
+<script>
+
+$('.hide').click(function(){
+	$('.d1').hide();	
+});
+
+$('.show').click(function(){
+	$('.d1').show();	
+});
+$('.sh').click(function(){
+	$('.d1').toggle();	
+});
+
+
+
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css</title>
+	<style>
+		.d1{height:100px;width:100px;background:#ccffff;}
+		.d2{height:200px;width:200px;background:#ffccff;}
+	</style>
+</head>
+<body>
+<div class="d2">hello</div>
+
+<div class="d1"> world
+</div>
+
+
+
+<input class="dr" type="button" value="淡入">
+<input class="dc"" type="button" value="淡出">
+<input class="cr"" type="button" value="淡出淡入">
+
+<script src="./jquery-3.0.0.min.js"></script>
+<script>
+/*
+$('.dc').click(function(){
+	$('.d2').fadeTo('slow',0);	
+});
+$('.dr').click(function(){
+	$('.d2').fadeTo('slow',1);	
+});
+*/
+$('.dc').click(function(){
+	$('.d2').fadeOut('slow',function(){
+		alert('淡出完毕');
+	});	
+});
+$('.dr').click(function(){
+	$('.d2').fadeIn();	
+});
+
+$('.cr').click(function(){
+	$('.d2').fadeToggle();	
+});
+
+
+</script>
+	
+</body>
+</html>

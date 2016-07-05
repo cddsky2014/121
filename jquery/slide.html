@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css</title>
+	<style>
+		.d1{height:100px;width:100px;background:#ccffff;}
+		.d2{height:200px;width:200px;background:#ffccff;}
+	</style>
+</head>
+<body>
+<div class="d1">hello</div>
+
+<input class="up" type="button" value="收起">
+<input class="stop"" type="button" value="停止">
+<input class="down"" type="button" value="下拉">
+<input class="updown"" type="button" value="收起下拉">
+
+
+<script src="./jquery-3.0.0.min.js"></script>
+<script>
+
+$('.up').click(function(){
+	$('.d1').slideUp(5000,function(){
+		alert('收起完毕');
+	});	
+});
+$('.down').click(function(){
+	$('.d1').slideDown();	
+});
+$('.updown').click(function(){
+	$('.d1').slideToggle();	
+});
+
+$('.stop').click(function(){
+	$('.d1').stop(true);	
+});
+
+
+</script>
+	
+</body>
+</html>

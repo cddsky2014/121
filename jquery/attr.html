@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css</title>
+	<style>
+		.d1{height:100px;width:100px;background:blue;}
+	</style>
+</head>
+<body>
+
+<input name="uname" type="text" value="lucy">
+<br>
+<input name="sub" type="button" value="属性">
+
+<script src="./jquery-3.0.0.min.js"></script>
+<script>
+
+$('[name=sub]').click(function(){
+	//console.log($('[name=uname]').attr('type'));
+	//$('[name=uname]').attr({type:'button',value:'提交'})
+	//console.log($('[name=uname]').attr('value'));
+	console.log($('[name=uname]').val('tom'));
+});
+
+
+</script>
+	
+</body>
+</html>
