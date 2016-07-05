@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+		/*
+			1、创建XML对象
+			2、输入请求链接open(请求方式,url,false)
+			3、设置请求方式get post
+			4、发送请求send()		
+		*/
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.open('get','http://127.0.0.1/jquery/getpage.php',false);
+		xmlhttp.send();
+		document.write(xmlhttp.responseText);	
+	</script>
+	
+</body>
+</html>
