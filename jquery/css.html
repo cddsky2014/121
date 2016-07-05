@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css</title>
+	<style>
+		.d1{height:100px;width:100px;background:blue;}
+	</style>
+</head>
+<body>
+
+<div class="d1"></div>
+<input type="button" value="增加宽度">
+
+
+<script src="./jquery-3.0.0.min.js"></script>
+<script>
+//json
+/*
+var data = {
+	name:'lucy',
+	age:23,
+	say:function(){alert('hello');}
+};
+console.log(data.name);
+*/
+//console.log($('.d1').css('width'));
+//$('.d1').css('width','200px');
+//$('.d1').css({width:'200px',height:'200px'});
+$('[type=button]').bind('click',function(){
+	console.log(this);
+	$('.d1').css('width',function(index,curr){		
+		return $(this).width()+10;
+	});
+});
+
+</script>
+	
+</body>
+</html>
