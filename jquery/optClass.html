@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css</title>
+	<style>
+		.d1{height:100px;width:100px;background:#ccffff;}
+		.d2{height:200px;width:200px;background:#ffccff;}
+	</style>
+</head>
+<body>
+<div cfa>hello</div>
+
+<input class="addClass" type="button" value="addClass">
+<input class="removeClass" type="button" value="removeClass">
+<input class="hasClass" type="button" value="hasClass">
+<input class="toggleClass" type="button" value="toggleClass">
+<script src="./jquery-3.0.0.min.js"></script>
+<script>
+
+
+
+$('.addClass').click(function(){
+	//$('div').addClass('d1');	
+	$('div').attr('class','d1');	
+});
+
+$('.removeClass').click(function(){
+	$('div').removeClass('d1');	
+});
+
+
+$('.hasClass').click(function(){
+	console.log($('div').hasClass('d1'));	
+});
+
+$('.toggleClass').click(function(){
+	$('div').toggleClass('d1');	
+});
+
+
+
+
+
+</script>
+	
+</body>
+</html>

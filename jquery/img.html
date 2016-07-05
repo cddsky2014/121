@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.img{width:400px;font-size:0px;}
+	.w-100{width:100px;}
+	</style>	
+</head>
+<body>
+<div class="img">
+	<img src="./img/1.jpg" alt="">
+	<img class="w-100" src="./img/1.jpg" alt="">
+	<img class="w-100" src="./img/2.jpg" alt="">
+	<img class="w-100" src="./img/3.jpg" alt="">
+	<img class="w-100" src="./img/4.jpg" alt="">
+</div>
+<script src="./jquery-3.0.0.min.js"></script>
+<script>
+	$('.w-100').mouseover(function(){
+		//在事件触发的时候获取对象的src属性值
+		var url = $(this).attr('src');
+		//将第一个IMG元素的src属性值设置成，获取的属性值
+		$('.img img:first').attr('src',url);		
+	});
+</script>
+	
+
+	
+</body>
+</html>

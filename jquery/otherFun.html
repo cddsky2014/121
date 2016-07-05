@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css</title>
+	<style>
+		.d1{height:100px;width:100px;background:#ccffff;}
+		.d2{height:200px;width:200px;background:#ffccff;}
+	</style>
+</head>
+<body>
+<div><b>hello</b></div>
+<div><b>hello</b></div>
+
+<input class="html" type="button" value="html">
+
+<script src="./jquery-3.0.0.min.js"></script>
+<script>
+$('.html').click(function(){	
+	console.log($('div').html());	
+	console.log($('div').text());
+	//$('div').html('<i></i>')
+});
+
+console.log($('div').length);
+
+
+
+
+
+
+</script>
+	
+</body>
+</html>
