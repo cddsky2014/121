@@ -1,0 +1,34 @@
+<extend name="public/base" />
+
+<block name="content">
+	
+	<table class="table">
+		<tr>
+			<td>用户名</td>
+			<td>邮箱</td>
+			<td>手机</td>
+			<td>操作</td>
+		</tr>
+
+		<volist name="users" id="vo">
+		<tr class="tr_{$vo.aid}">
+			<td class="aname">{$vo.aname}</td>
+			<td class="email">{$vo.email}</td>
+			<td class="tel">{$vo.tel}</td>
+			<td>
+				<span data-aid="{$vo.aid}" class="btn btn-primary btn-xs del">删除</span>
+
+				<span data-aid="{$vo.aid}" data-email="{$vo.email}" data-tel="{$vo.tel}" data-aname="{$vo.aname}"class="btn btn-primary btn-xs edit">修改</span>
+			</td>
+		</tr>		
+		</volist>	
+	</table>
+
+	<input type="hidden" value="" name="aid"><br>
+
+	姓名：<input type="text" name="aname"><br>
+	邮箱：<input type="text" name="email"><br>
+	电话：<input type="text" name="tel"><br>
+	<input class="doedit" type="button" value="修改"><br>
+
+</block>
