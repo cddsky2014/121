@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+
+
+<div>我是上边的内容</div>
+<div>我是上边的内容</div>
+<div>我是上边的内容</div>
+<div>我是上边的内容</div>
+
+<div class="content">world</div>
+
+<div>我是下边的内容</div>
+<div>我是下边的内容</div>
+<div>我是下边的内容</div>
+<div>我是下边的内容</div>
+<div>我是下边的内容</div>
+
+<script src="./jquery-3.0.0.min.js"></script>
+<script>
+var data = {name:'rose',age:23};
+/*
+$.get('./getpage.php',function(data){
+	//console.log(data.age);
+	//console.log(data);
+	$('.content').text(data.age);
+});
+
+//type:返回内容格式，xml, html, script, json, text, _default。
+
+$.post('./getpage.php',data,function(data){
+	//console.log(data);
+	$('.content').text(data);
+},'josn');
+*/
+
+var param = {
+	type:'get',
+	url:'./getpage.php',
+	dataType:'text',
+	data:{name:'rose2'},
+	success:function(res){
+		console.log(res);
+	},
+	error:function(){
+		console.log('我错了');
+	},
+	complete:function(){
+		console.log('完成了');
+	}
+};
+
+$.ajax(param);
+
+
+
+</script>
+</body>
+</html>

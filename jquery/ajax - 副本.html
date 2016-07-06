@@ -8,28 +8,40 @@
 	</style>
 </head>
 <body>
+
 <div id="number"></div>
+
 <div id="text"></div>
+
+<input onclick="request();" type="button" value="send">
 	<script>
 		/*
-			1、创建XMLHttpRequest对象
+			1、创建XML对象
 			2、输入请求链接open(请求方式,url,false)
 			3、设置请求方式get post
 			4、发送请求send()		
 		*/
+
 		var xmlhttp = new XMLHttpRequest();
-		//xmlhttp.open('get','http://127.0.0.1/jquery/getpage.php?name=jack',true);
-		xmlhttp.open('post','http://127.0.0.1/jquery/getpage.php?age=23',true);
-		xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-		xmlhttp.onreadystatechange=function(){
-			if(xmlhttp.readyState==4 && xmlhttp.status==200){	
-				var text = xmlhttp.responseText
-				document.getElementById('text').innerHTML = text;
-			}			
-		};
-		xmlhttp.send('name=tom&sex=boy');	
-		document.getElementById('number').innerHTML = Math.random();		
+		xmlhttp.open('get','http://127.0.0.1/jquery/getpage.php',false);
+		xmlhttp.send();
+		var text = xmlhttp.responseText
+		document.getElementById('text').innerHTML = text;
+
+
+		
+		function request(){
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.open('get','http://127.0.0.1/jquery/getpage.php',false);
+			xmlhttp.send();
+			var text = xmlhttp.responseText
+			document.getElementById('text').innerHTML = text;	
+		}	
+
+		document.getElementById('number').innerHTML = Math.random();	
+		
 	</script>
+
 
 	<div>我是下边的内容</div>
 	<div>我是下边的内容</div>
