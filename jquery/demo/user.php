@@ -51,7 +51,6 @@ while($row = mysql_fetch_assoc($res)){
 	<script src="../jquery-3.0.0.min.js"></script>
 
 	<script>
-
 	$('[name=add]').click(function(){		
 		var data= {
 			sname:$('[name=sname]').val(),
@@ -66,13 +65,8 @@ while($row = mysql_fetch_assoc($res)){
 			
 		});
 		
-	});
-		
+	});	
 	
-	</script>
-
-
-	
+	</script>	
 </body>
 </html>
-
