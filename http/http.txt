@@ -1,0 +1,25 @@
+telnet 127.0.0.1 80
+	
+ctrl+]
+
+回车
+
+
+GET /http/get.php?name=lili&age=20 HTTP/1.1
+Host:
+
+HTTP/1.1 200 OK
+Date: Thu, 07 Jul 2016 03:01:17 GMT
+Server: Apache/2.4.17 (Win64) PHP/5.6.16
+X-Powered-By: PHP/5.6.16
+Content-Length: 159
+Content-Type: text/html; charset=UTF-8
+
+
+POST /http/post.php?p=1 HTTP/1.1
+Host:
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 16
+
+
+name=lucy&age=20
