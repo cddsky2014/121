@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<RECORDS>
+	<RECORD>
+		<aid>1</aid>
+		<aname>admin</aname>
+		<email>admin@qq.com</email>
+		<tel>18013830666</tel>
+		<pwd>123</pwd>
+	</RECORD>
+</RECORDS>

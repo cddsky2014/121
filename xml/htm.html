@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./jquery.xml2json.js"></script>
+
+<script>
+//onload
+	$(function(){		
+		$.get('./xml.php',function(res){			
+			//console.log($(res).find('student name').text());			
+			//var json = $.xml2json(res);
+			//console.log(json.hobby);
+			console.log(res);
+		},'xml');		
+	
+	});
+
+</script>
+
+	
+</body>
+</html>

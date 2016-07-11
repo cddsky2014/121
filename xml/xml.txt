@@ -1,0 +1,13 @@
+{"name":"lucy","age":20,"sex":"girl","addr":"南京"}
+{"name":"lucy","age":20,"sex":"girl","addr":"南京"}
+
+<student>
+    <name>lucy</name>
+    <age>20</age>
+    <hobby count="3">
+        <music />
+        <dance />
+        <sing />
+    </hobby>
+    <addr>南京</addr>
+</student>
