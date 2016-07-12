@@ -1,0 +1,832 @@
+12/07/2016 12:33:18.602 *** START OF APPLICATION ***
+12/07/2016 12:35:47.699 FTP Server started on port 21.
+12/07/2016 12:35:58.172 (000001)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:35:58.173 (000001)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:35:58.177 (000001)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:35:58.179 (000001)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:35:58.181 (000001)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:35:58.183 (000001)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:35:58.186 (000001)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:35:58.188 (000001)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:36:07.646 (000002)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:36:07.647 (000002)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:36:07.648 (000002)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:36:07.649 (000002)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:36:07.652 (000002)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:36:07.653 (000002)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:36:07.654 (000002)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:36:07.654 (000002)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:36:07.655 (000002)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:36:07.656 (000002)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:36:07.657 (000002)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:36:07.658 (000002)	 - thinksite	(192.168.1.124)>	SIZE /
+12/07/2016 12:36:07.659 (000002)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:36:07.661 (000002)	 - thinksite	(192.168.1.124)>	CWD /
+12/07/2016 12:36:07.663 (000002)	 - thinksite	(192.168.1.124)>	250 "/" is current directory.
+
+12/07/2016 12:36:07.664 (000002)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:36:07.666 (000002)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,0).
+
+12/07/2016 12:36:07.668 (000002)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:36:07.669 (000002)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:36:07.671 (000002)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:36:07.672 (000002)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:36:13.381 (000003)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:36:13.382 (000003)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:36:13.384 (000003)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:36:13.385 (000003)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:36:13.387 (000003)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:36:13.388 (000003)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:36:13.389 (000003)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:36:13.390 (000003)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:36:13.392 (000004)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:36:13.394 (000004)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:36:13.396 (000004)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:36:13.398 (000004)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:36:13.400 (000004)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:36:13.401 (000004)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:36:13.402 (000004)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:36:13.403 (000004)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:36:13.404 (000004)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:36:13.405 (000004)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:36:13.406 (000004)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:36:13.406 (000004)	 - thinksite	(192.168.1.124)>	SIZE /121
+12/07/2016 12:36:13.408 (000004)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:36:13.410 (000004)	 - thinksite	(192.168.1.124)>	CWD /121/
+12/07/2016 12:36:13.411 (000004)	 - thinksite	(192.168.1.124)>	250 "//121" is current directory.
+
+12/07/2016 12:36:13.412 (000004)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:36:13.414 (000004)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,0).
+
+12/07/2016 12:36:13.415 (000004)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:36:13.418 (000004)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:36:13.419 (000004)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:36:13.420 (000004)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:36:14.790 (000005)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:36:14.791 (000005)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:36:14.792 (000005)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:36:14.795 (000005)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:36:14.796 (000005)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:36:14.797 (000005)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:36:14.798 (000005)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:36:14.801 (000005)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:36:14.803 (000006)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:36:14.804 (000006)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:36:14.805 (000006)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:36:14.806 (000006)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:36:14.807 (000006)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:36:14.808 (000006)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:36:14.809 (000006)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:36:14.810 (000006)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:36:14.811 (000006)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:36:14.812 (000006)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:36:14.813 (000006)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:36:14.814 (000006)	 - thinksite	(192.168.1.124)>	SIZE /
+12/07/2016 12:36:14.815 (000006)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:36:14.818 (000006)	 - thinksite	(192.168.1.124)>	CWD /
+12/07/2016 12:36:14.819 (000006)	 - thinksite	(192.168.1.124)>	250 "/" is current directory.
+
+12/07/2016 12:36:14.820 (000006)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:36:14.822 (000006)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,0).
+
+12/07/2016 12:36:14.823 (000006)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:36:14.825 (000006)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:36:14.826 (000006)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:36:14.827 (000006)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:36:14.828 (000006)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:36:14.829 (000006)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:36:41.803 FTP Server stop.
+12/07/2016 12:37:27.774 FTP Server started on port 21.
+12/07/2016 12:37:31.956 (000001)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:31.957 (000001)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:37:31.958 (000001)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:37:31.959 (000001)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:37:31.960 (000001)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:37:31.961 (000001)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:37:31.963 (000001)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:37:31.964 (000001)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:37:31.966 (000002)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:31.968 (000002)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:37:31.969 (000002)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:37:31.970 (000002)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:37:31.972 (000002)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:37:31.975 (000002)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:37:31.977 (000002)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:37:31.978 (000002)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:37:31.979 (000002)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:37:31.980 (000002)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:37:31.981 (000002)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:37:31.981 (000002)	 - thinksite	(192.168.1.124)>	SIZE /
+12/07/2016 12:37:31.982 (000002)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:37:31.983 (000002)	 - thinksite	(192.168.1.124)>	CWD /
+12/07/2016 12:37:31.984 (000002)	 - thinksite	(192.168.1.124)>	250 "/" is current directory.
+
+12/07/2016 12:37:31.985 (000002)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:37:31.987 (000002)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,0).
+
+12/07/2016 12:37:31.989 (000002)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:37:31.990 (000002)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:37:31.992 (000002)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:37:31.993 (000002)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:37:34.130 (000003)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:34.131 (000003)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:37:34.133 (000003)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:37:34.134 (000003)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:37:34.134 (000003)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:37:34.135 (000003)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:37:34.136 (000003)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:37:34.138 (000003)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:37:34.139 (000004)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:34.140 (000004)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:37:34.141 (000004)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:37:34.143 (000004)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:37:34.145 (000004)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:37:34.146 (000004)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:37:34.147 (000004)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:37:34.148 (000004)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:37:34.149 (000004)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:37:34.150 (000004)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:37:34.151 (000004)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:37:34.152 (000004)	 - thinksite	(192.168.1.124)>	SIZE /review.php
+12/07/2016 12:37:34.153 (000004)	 - thinksite	(192.168.1.124)>	213 254
+
+12/07/2016 12:37:34.153 (000004)	 - thinksite	(192.168.1.124)>	CWD /review.php
+12/07/2016 12:37:34.154 (000004)	 - thinksite	(192.168.1.124)>	250 "/review.php" is current directory.
+
+12/07/2016 12:37:34.156 (000004)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:37:34.157 (000004)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,0).
+
+12/07/2016 12:37:34.159 (000004)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:37:34.161 (000004)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:37:34.163 (000004)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:37:34.164 (000004)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:37:34.165 (000004)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:37:34.167 (000004)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:37:35.637 (000005)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:35.638 (000005)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:37:35.639 (000005)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:37:35.641 (000005)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:37:35.642 (000005)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:37:35.643 (000005)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:37:35.645 (000005)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:37:35.646 (000005)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:37:35.648 (000006)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:35.649 (000006)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:37:35.650 (000006)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:37:35.651 (000006)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:37:35.652 (000006)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:37:35.653 (000006)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:37:35.654 (000006)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:37:35.654 (000006)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:37:35.655 (000006)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:37:35.656 (000006)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:37:35.657 (000006)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:37:35.658 (000006)	 - thinksite	(192.168.1.124)>	SIZE /
+12/07/2016 12:37:35.658 (000006)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:37:35.659 (000006)	 - thinksite	(192.168.1.124)>	CWD /
+12/07/2016 12:37:35.660 (000006)	 - thinksite	(192.168.1.124)>	250 "/" is current directory.
+
+12/07/2016 12:37:35.661 (000006)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:37:35.662 (000006)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,0).
+
+12/07/2016 12:37:35.665 (000006)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:37:35.667 (000006)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:37:35.668 (000006)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:37:35.670 (000006)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:37:36.707 (000007)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:36.710 (000007)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:37:36.711 (000007)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:37:36.711 (000007)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:37:36.712 (000007)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:37:36.713 (000007)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:37:36.714 (000007)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:37:36.715 (000007)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:37:36.716 (000008)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:36.717 (000008)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:37:36.718 (000008)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:37:36.719 (000008)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:37:36.720 (000008)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:37:36.720 (000008)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:37:36.721 (000008)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:37:36.722 (000008)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:37:36.723 (000008)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:37:36.723 (000008)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:37:36.724 (000008)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:37:36.725 (000008)	 - thinksite	(192.168.1.124)>	SIZE /post.php
+12/07/2016 12:37:36.726 (000008)	 - thinksite	(192.168.1.124)>	213 270
+
+12/07/2016 12:37:36.727 (000008)	 - thinksite	(192.168.1.124)>	CWD /post.php
+12/07/2016 12:37:36.728 (000008)	 - thinksite	(192.168.1.124)>	250 "/post.php" is current directory.
+
+12/07/2016 12:37:36.730 (000008)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:37:36.732 (000008)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,0).
+
+12/07/2016 12:37:36.738 (000008)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:37:36.740 (000008)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:37:36.741 (000008)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:37:36.745 (000008)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:37:36.746 (000008)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:37:36.747 (000008)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:37:38.407 (000009)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:38.408 (000009)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:37:38.409 (000009)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:37:38.410 (000009)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:37:38.411 (000009)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:37:38.412 (000009)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:37:38.413 (000009)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:37:38.414 (000009)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:37:38.415 (000010)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:38.417 (000010)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:37:38.418 (000010)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:37:38.419 (000010)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:37:38.420 (000010)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:37:38.421 (000010)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:37:38.422 (000010)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:37:38.423 (000010)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:37:38.425 (000010)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:37:38.425 (000010)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:37:38.426 (000010)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:37:38.427 (000010)	 - thinksite	(192.168.1.124)>	SIZE /
+12/07/2016 12:37:38.428 (000010)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:37:38.428 (000010)	 - thinksite	(192.168.1.124)>	CWD /
+12/07/2016 12:37:38.429 (000010)	 - thinksite	(192.168.1.124)>	250 "/" is current directory.
+
+12/07/2016 12:37:38.430 (000010)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:37:38.431 (000010)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,0).
+
+12/07/2016 12:37:38.432 (000010)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:37:38.434 (000010)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:37:38.435 (000010)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:37:38.438 (000010)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:37:38.438 (000010)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:37:38.440 (000010)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:37:39.558 (000011)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:39.559 (000011)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:37:39.560 (000011)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:37:39.561 (000011)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:37:39.563 (000011)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:37:39.564 (000011)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:37:39.565 (000011)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:37:39.566 (000011)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:37:39.570 (000012)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:39.571 (000012)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:37:39.572 (000012)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:37:39.573 (000012)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:37:39.574 (000012)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:37:39.575 (000012)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:37:39.576 (000012)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:37:39.576 (000012)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:37:39.577 (000012)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:37:39.578 (000012)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:37:39.579 (000012)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:37:39.580 (000012)	 - thinksite	(192.168.1.124)>	SIZE /get.php
+12/07/2016 12:37:39.581 (000012)	 - thinksite	(192.168.1.124)>	213 182
+
+12/07/2016 12:37:39.582 (000012)	 - thinksite	(192.168.1.124)>	CWD /get.php
+12/07/2016 12:37:39.583 (000012)	 - thinksite	(192.168.1.124)>	250 "/get.php" is current directory.
+
+12/07/2016 12:37:39.585 (000012)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:37:39.586 (000012)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,0).
+
+12/07/2016 12:37:39.588 (000012)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:37:39.590 (000012)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:37:39.593 (000012)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:37:39.594 (000012)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:37:39.594 (000012)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:37:39.595 (000012)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:37:40.575 (000013)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:40.576 (000013)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:37:40.579 (000013)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:37:40.580 (000013)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:37:40.580 (000013)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:37:40.581 (000013)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:37:40.582 (000013)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:37:40.583 (000013)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:37:40.584 (000014)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:40.585 (000014)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:37:40.586 (000014)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:37:40.586 (000014)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:37:40.589 (000014)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:37:40.590 (000014)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:37:40.591 (000014)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:37:40.591 (000014)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:37:40.592 (000014)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:37:40.593 (000014)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:37:40.594 (000014)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:37:40.594 (000014)	 - thinksite	(192.168.1.124)>	SIZE /get.php/get.php
+12/07/2016 12:37:40.595 (000014)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:37:40.596 (000014)	 - thinksite	(192.168.1.124)>	CWD /get.php/get.php
+12/07/2016 12:37:40.597 (000014)	 - thinksite	(192.168.1.124)>	550 "/get.php/get.php": Directory not found.
+
+12/07/2016 12:37:40.598 (000014)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:37:40.599 (000014)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,0).
+
+12/07/2016 12:37:40.599 (000014)	 - thinksite	(192.168.1.124)>	RETR /get.php/get.php
+12/07/2016 12:37:40.600 (000014)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:37:40.601 (000014)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:37:40.602 (000014)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:37:40.603 (000014)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:37:42.036 (000015)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:42.037 (000015)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:37:42.038 (000015)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:37:42.039 (000015)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:37:42.039 (000015)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:37:42.040 (000015)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:37:42.042 (000015)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:37:42.044 (000015)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:37:42.045 (000016)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:42.046 (000016)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:37:42.047 (000016)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:37:42.048 (000016)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:37:42.049 (000016)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:37:42.051 (000016)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:37:42.052 (000016)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:37:42.053 (000016)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:37:42.054 (000016)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:37:42.056 (000016)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:37:42.057 (000016)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:37:42.058 (000016)	 - thinksite	(192.168.1.124)>	SIZE /get.php
+12/07/2016 12:37:42.059 (000016)	 - thinksite	(192.168.1.124)>	213 182
+
+12/07/2016 12:37:42.060 (000016)	 - thinksite	(192.168.1.124)>	CWD /get.php
+12/07/2016 12:37:42.061 (000016)	 - thinksite	(192.168.1.124)>	250 "/get.php" is current directory.
+
+12/07/2016 12:37:42.062 (000016)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:37:42.063 (000016)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,1).
+
+12/07/2016 12:37:42.063 (000016)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:37:42.065 (000016)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:37:42.066 (000016)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:37:42.067 (000016)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:37:42.067 (000016)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:37:42.068 (000016)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:37:43.476 (000017)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:43.477 (000017)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:37:43.478 (000017)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:37:43.479 (000017)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:37:43.480 (000017)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:37:43.482 (000017)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:37:43.483 (000017)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:37:43.484 (000017)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:37:43.485 (000018)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:43.486 (000018)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:37:43.487 (000018)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:37:43.488 (000018)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:37:43.489 (000018)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:37:43.490 (000018)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:37:43.491 (000018)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:37:43.492 (000018)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:37:43.493 (000018)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:37:43.494 (000018)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:37:43.495 (000018)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:37:43.495 (000018)	 - thinksite	(192.168.1.124)>	SIZE /
+12/07/2016 12:37:43.496 (000018)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:37:43.497 (000018)	 - thinksite	(192.168.1.124)>	CWD /
+12/07/2016 12:37:43.498 (000018)	 - thinksite	(192.168.1.124)>	250 "/" is current directory.
+
+12/07/2016 12:37:43.499 (000018)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:37:43.500 (000018)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,1).
+
+12/07/2016 12:37:43.504 (000018)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:37:43.506 (000018)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:37:43.508 (000018)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:37:43.509 (000018)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:37:43.510 (000018)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:37:43.511 (000018)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:37:49.234 (000019)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:49.236 (000019)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:37:49.239 (000019)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:37:49.240 (000019)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:37:49.241 (000019)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:37:49.243 (000019)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:37:49.244 (000019)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:37:49.245 (000019)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:37:49.246 (000020)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:37:49.248 (000020)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:37:49.249 (000020)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:37:49.250 (000020)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:37:49.251 (000020)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:37:49.252 (000020)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:37:49.253 (000020)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:37:49.254 (000020)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:37:49.255 (000020)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:37:49.256 (000020)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:37:49.257 (000020)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:37:49.258 (000020)	 - thinksite	(192.168.1.124)>	SIZE /
+12/07/2016 12:37:49.258 (000020)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:37:49.259 (000020)	 - thinksite	(192.168.1.124)>	CWD /
+12/07/2016 12:37:49.260 (000020)	 - thinksite	(192.168.1.124)>	250 "/" is current directory.
+
+12/07/2016 12:37:49.262 (000020)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:37:49.263 (000020)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,1).
+
+12/07/2016 12:37:49.264 (000020)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:37:49.266 (000020)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:37:49.267 (000020)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:37:49.268 (000020)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:44:19.708 (000021)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:44:19.708 (000021)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:44:19.708 (000021)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:44:19.709 (000021)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:44:19.709 (000021)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:44:19.710 (000021)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:44:19.710 (000021)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:44:19.711 (000021)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:44:45.504 (000022)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:44:45.505 (000022)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:44:45.505 (000022)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:44:45.505 (000022)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:44:45.506 (000022)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:44:45.506 (000022)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:44:45.507 (000022)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:44:45.507 (000022)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:45:05.411 (000023)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:45:05.412 (000023)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:45:05.412 (000023)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:45:05.412 (000023)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:45:05.414 (000023)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:45:05.415 (000023)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:45:05.415 (000023)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:45:05.420 (000023)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:45:23.639 (000024)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:45:23.639 (000024)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:45:23.640 (000024)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:45:23.640 (000024)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:45:23.641 (000024)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:45:23.642 (000024)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:45:23.642 (000024)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:45:23.642 (000024)	 - thinksite	(192.168.1.124)>	CWD ftp
+12/07/2016 12:45:23.643 (000024)	 - thinksite	(192.168.1.124)>	250 "/ftp" is current directory.
+
+12/07/2016 12:45:23.643 (000024)	 - thinksite	(192.168.1.124)>	EPSV
+12/07/2016 12:45:23.644 (000024)	 - thinksite	(192.168.1.124)>	502 Command not implemented - Try HELP.
+
+12/07/2016 12:45:23.644 (000024)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:45:23.644 (000024)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,1).
+
+12/07/2016 12:45:23.645 (000024)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:45:23.645 (000024)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:45:23.646 (000024)	 - thinksite	(192.168.1.124)>	STOR a.png
+12/07/2016 12:45:23.647 (000024)	 - thinksite	(192.168.1.124)>	150 Opening BINARY mode data connection for file transfer.
+
+12/07/2016 12:45:23.648 (000024)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:45:23.648 (000024)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:45:23.648 (000024)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:45:23.649 (000024)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:46:07.850 (000025)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:46:07.851 (000025)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:46:07.852 (000025)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:46:07.852 (000025)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:46:07.852 (000025)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:46:07.853 (000025)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:46:07.853 (000025)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:46:07.854 (000025)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:46:07.858 (000026)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:46:07.858 (000026)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:46:07.859 (000026)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:46:07.859 (000026)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:46:07.860 (000026)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:46:07.861 (000026)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:46:07.861 (000026)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:46:07.861 (000026)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:46:07.862 (000026)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:46:07.862 (000026)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:46:07.863 (000026)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:46:07.863 (000026)	 - thinksite	(192.168.1.124)>	SIZE /
+12/07/2016 12:46:07.864 (000026)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:46:07.864 (000026)	 - thinksite	(192.168.1.124)>	CWD /
+12/07/2016 12:46:07.864 (000026)	 - thinksite	(192.168.1.124)>	250 "/" is current directory.
+
+12/07/2016 12:46:07.865 (000026)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:46:07.866 (000026)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,1).
+
+12/07/2016 12:46:07.867 (000026)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:46:07.867 (000026)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:46:07.868 (000026)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:46:07.868 (000026)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:46:07.869 (000026)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:46:07.869 (000026)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:46:20.408 (000027)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:46:20.409 (000027)	 - (not logged in)	(192.168.1.124)>	USER anonymous
+12/07/2016 12:46:20.409 (000027)	 - (not logged in)	(192.168.1.124)>	331 Password required for anonymous
+
+12/07/2016 12:46:20.410 (000027)	 - (not logged in)	(192.168.1.124)>	PASS chrome@example.com
+12/07/2016 12:46:20.410 (000027)	 - (not logged in)	(192.168.1.124)>	530 Not logged in, user or password incorrect!
+
+12/07/2016 12:46:20.410 (000027)	 - (not logged in)	(192.168.1.124)>	QUIT
+12/07/2016 12:46:20.411 (000027)	 - (not logged in)	(192.168.1.124)>	530 Please login with USER and PASS.
+
+12/07/2016 12:46:20.412 (000027)	 - (not logged in)	(192.168.1.124)>	Client :anonymous disconnected from 192.168.1.124
+12/07/2016 12:46:33.322 (000028)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:46:33.323 (000028)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:46:33.323 (000028)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:46:33.323 (000028)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:46:33.324 (000028)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:46:33.325 (000028)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:46:33.325 (000028)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:46:33.325 (000028)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:46:33.325 (000028)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:46:33.326 (000028)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:46:33.326 (000028)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:46:33.327 (000028)	 - thinksite	(192.168.1.124)>	SIZE /
+12/07/2016 12:46:33.327 (000028)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:46:33.328 (000028)	 - thinksite	(192.168.1.124)>	CWD /
+12/07/2016 12:46:33.329 (000028)	 - thinksite	(192.168.1.124)>	250 "/" is current directory.
+
+12/07/2016 12:46:33.329 (000028)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:46:33.330 (000028)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,1).
+
+12/07/2016 12:46:33.330 (000028)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:46:33.332 (000028)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:46:33.334 (000028)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:46:33.335 (000028)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:46:33.335 (000028)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:46:33.336 (000028)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:46:56.626 (000029)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:46:56.628 (000029)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:46:56.629 (000029)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:46:56.629 (000029)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:46:56.631 (000029)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:46:56.631 (000029)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:46:56.632 (000029)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:46:56.632 (000029)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:46:56.632 (000029)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:46:56.633 (000029)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:46:56.633 (000029)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:46:56.634 (000029)	 - thinksite	(192.168.1.124)>	SIZE /ftp
+12/07/2016 12:46:56.634 (000029)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:46:56.634 (000029)	 - thinksite	(192.168.1.124)>	CWD /ftp/
+12/07/2016 12:46:56.635 (000029)	 - thinksite	(192.168.1.124)>	250 "/ftp" is current directory.
+
+12/07/2016 12:46:56.635 (000029)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:46:56.636 (000029)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,1).
+
+12/07/2016 12:46:56.637 (000029)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:46:56.637 (000029)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:46:56.639 (000029)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:46:56.639 (000029)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:46:56.639 (000029)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:46:56.640 (000029)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:46:58.703 (000030)	 - (not logged in)	(192.168.1.124)>	220 Welcome to JDFW  FTP Server V4.0.0
+
+12/07/2016 12:46:58.703 (000030)	 - (not logged in)	(192.168.1.124)>	USER thinksite
+12/07/2016 12:46:58.704 (000030)	 - (not logged in)	(192.168.1.124)>	331 Password required for thinksite
+
+12/07/2016 12:46:58.704 (000030)	 - (not logged in)	(192.168.1.124)>	PASS 123
+12/07/2016 12:46:58.705 (000030)	 - thinksite	(192.168.1.124)>	230 Client :thinksite successfully logged in. Client IP :192.168.1.124
+
+12/07/2016 12:46:58.705 (000030)	 - thinksite	(192.168.1.124)>	SYST
+12/07/2016 12:46:58.706 (000030)	 - thinksite	(192.168.1.124)>	215 WINDOWS emulated by DXMSOFT.
+
+12/07/2016 12:46:58.706 (000030)	 - thinksite	(192.168.1.124)>	PWD
+12/07/2016 12:46:58.706 (000030)	 - thinksite	(192.168.1.124)>	257 "/" is current directory.
+
+12/07/2016 12:46:58.707 (000030)	 - thinksite	(192.168.1.124)>	TYPE I
+12/07/2016 12:46:58.707 (000030)	 - thinksite	(192.168.1.124)>	200 Type set to I
+
+12/07/2016 12:46:58.708 (000030)	 - thinksite	(192.168.1.124)>	SIZE /
+12/07/2016 12:46:58.708 (000030)	 - thinksite	(192.168.1.124)>	550 File not found.
+
+12/07/2016 12:46:58.709 (000030)	 - thinksite	(192.168.1.124)>	CWD /
+12/07/2016 12:46:58.709 (000030)	 - thinksite	(192.168.1.124)>	250 "/" is current directory.
+
+12/07/2016 12:46:58.710 (000030)	 - thinksite	(192.168.1.124)>	PASV
+12/07/2016 12:46:58.710 (000030)	 - thinksite	(192.168.1.124)>	227 Entering Passive Mode (192,168,1,124,4,1).
+
+12/07/2016 12:46:58.711 (000030)	 - thinksite	(192.168.1.124)>	LIST -l
+12/07/2016 12:46:58.712 (000030)	 - thinksite	(192.168.1.124)>	150 Opening ASCII mode data connection for directory list.
+
+12/07/2016 12:46:58.713 (000030)	 - thinksite	(192.168.1.124)>	226 Transfer complete.
+
+12/07/2016 12:46:58.713 (000030)	 - thinksite	(192.168.1.124)>	QUIT
+12/07/2016 12:46:58.714 (000030)	 - thinksite	(192.168.1.124)>	220 Bye
+
+12/07/2016 12:46:58.715 (000030)	 - thinksite	(192.168.1.124)>	Client :thinksite disconnected from 192.168.1.124
+12/07/2016 12:47:19.818 FTP Server stop.
+12/07/2016 12:48:22.809 *** END OF APPLICATION ***
