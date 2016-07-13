@@ -7,7 +7,8 @@
     //和服务器端建立链接
     socket_connect($socket, '127.0.0.1', 1314);
     //向服务器端送信息
-    socket_write($socket, 'hello', 1024);
+	$str = 'hello';
+    socket_write($socket, $str, strlen($str));
 
     //关闭释放资源
     socket_close($socket);
