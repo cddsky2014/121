@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<definitions name="Tool" targetNamespace="urn:Tool" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:Tool" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+<types xmlns="http://schemas.xmlsoap.org/wsdl/" />
+<portType name="ToolPort"><operation name="add">
+<input message="tns:addRequest" />
+<output message="tns:addResponse" />
+</operation>
+<operation name="sub">
+<input message="tns:subRequest" />
+<output message="tns:subResponse" />
+</operation>
+</portType>
+<binding name="ToolBinding" type="tns:ToolPort">
+<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+<operation name="add">
+<soap:operation soapAction="urn:Tool#Tool#add" />
+<input><soap:body use="encoded" namespace="urn:Tool" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:Tool" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+<operation name="sub">
+<soap:operation soapAction="urn:Tool#Tool#sub" />
+<input><soap:body use="encoded" namespace="urn:Tool" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:Tool" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+</binding>
+<service name="Tool">
+<documentation />
+<port name="ToolPort" binding="tns:ToolBinding"><soap:address location="http://192.168.34.29/server/server.php" />
+</port>
+</service>
+<message name="addRequest">
+<part name="a" type="xsd:string" />
+<part name="b" type="xsd:string" />
+</message>
+<message name="addResponse">
+<part name="add" type="xsd:string" />
+</message>
+<message name="subRequest">
+<part name="a" type="xsd:string" />
+<part name="b" type="xsd:string" />
+</message>
+<message name="subResponse">
+<part name="sub" type="xsd:string" />
+</message>
+</definitions>

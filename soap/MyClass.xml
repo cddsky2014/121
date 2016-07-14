@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<definitions name="abcd" targetNamespace="urn:abcd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:abcd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+<types xmlns="http://schemas.xmlsoap.org/wsdl/" />
+<portType name="abcdPort"><operation name="helloWorld">
+<input message="tns:helloWorldRequest" />
+<output message="tns:helloWorldResponse" />
+</operation>
+<operation name="add">
+<input message="tns:addRequest" />
+<output message="tns:addResponse" />
+</operation>
+</portType>
+<binding name="abcdBinding" type="tns:abcdPort">
+<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+<operation name="helloWorld">
+<soap:operation soapAction="urn:abcd#MyClass#helloWorld" />
+<input><soap:body use="encoded" namespace="urn:abcd" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:abcd" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+<operation name="add">
+<soap:operation soapAction="urn:abcd#MyClass#add" />
+<input><soap:body use="encoded" namespace="urn:abcd" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:abcd" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+</binding>
+<service name="abcd">
+<documentation />
+<port name="abcdPort" binding="tns:abcdBinding"><soap:address location="http://127.0.0.1/soap/server.php" />
+</port>
+</service>
+<message name="helloWorldRequest">
+</message>
+<message name="helloWorldResponse">
+<part name="helloWorld" type="xsd:string" />
+</message>
+<message name="addRequest">
+</message>
+<message name="addResponse">
+<part name="add" type="xsd:string" />
+</message>
+</definitions>

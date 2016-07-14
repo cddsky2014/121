@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<definitions name="Person" targetNamespace="urn:Person" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:Person" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+<types xmlns="http://schemas.xmlsoap.org/wsdl/" />
+<portType name="PersonPort"><operation name="say">
+<input message="tns:sayRequest" />
+<output message="tns:sayResponse" />
+</operation>
+<operation name="add">
+<input message="tns:addRequest" />
+<output message="tns:addResponse" />
+</operation>
+</portType>
+<binding name="PersonBinding" type="tns:PersonPort">
+<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+<operation name="say">
+<soap:operation soapAction="urn:Person#Person#say" />
+<input><soap:body use="encoded" namespace="urn:Person" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:Person" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+<operation name="add">
+<soap:operation soapAction="urn:Person#Person#add" />
+<input><soap:body use="encoded" namespace="urn:Person" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:Person" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+</binding>
+<service name="Person">
+<documentation />
+<port name="PersonPort" binding="tns:PersonBinding"><soap:address location="http://192.168.34.29/webservices/server.php" />
+</port>
+</service>
+<message name="sayRequest">
+<part name="str" type="xsd:string" />
+</message>
+<message name="sayResponse">
+<part name="say" type="xsd:string" />
+</message>
+<message name="addRequest">
+<part name="a" type="xsd:string" />
+<part name="b" type="xsd:string" />
+</message>
+<message name="addResponse">
+<part name="add" type="xsd:string" />
+</message>
+</definitions>

@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<definitions name="WebService" targetNamespace="urn:WebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:WebService" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+<types xmlns="http://schemas.xmlsoap.org/wsdl/" />
+<portType name="WebServicePort"><operation name="getTest">
+<input message="tns:getTestRequest" />
+<output message="tns:getTestResponse" />
+</operation>
+</portType>
+<binding name="WebServiceBinding" type="tns:WebServicePort">
+<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+<operation name="getTest">
+<soap:operation soapAction="urn:WebService#WebService#getTest" />
+<input><soap:body use="encoded" namespace="urn:WebService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:WebService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+</binding>
+<service name="WebService">
+<documentation />
+<port name="WebServicePort" binding="tns:WebServiceBinding"><soap:address location="http://127.0.0.1:80/soap/demo.php" />
+</port>
+</service>
+<message name="getTestRequest">
+</message>
+<message name="getTestResponse">
+<part name="getTest" type="xsd:string" />
+</message>
+</definitions>
