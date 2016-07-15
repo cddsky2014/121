@@ -9,4 +9,4 @@ $soap = new SoapClient(null,$opt);
 //$soap = new SoapClient(null,array('tarce'=>true));
 //print_r($soap->__getFunctions());// 输出当前可调用的所有方法
 
-echo $soap->add(1,11);  
+echo $soap->add(1,11);

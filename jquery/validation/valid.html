@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<form id="loginForm" action="">
+		用户：<input type="text" name="uname" ><br>
+
+		密码：<input type="text" name="pwd"><br>
+		确认密码：<input type="password" name="pwd2" ><br>
+
+		邮箱：<input type="text" name="email" ><br>
+
+		<input  type="submit" value="提交"><br>
+	
+	</form>
+
+	<script src="./jquery-1.9.1.js"></script>
+	<script src="./jquery.validate.min.js"></script>
+	<script src="./messages_zh.min.js"></script>
+	<script>
+	$(function(){
+		//将校验规则写到控件中
+		//required:true	必须输入的字段。
+
+		//maxlength:5	输入长度最多是 5 的字符串（汉字算一个字符）。
+		//minlength:10	输入长度最小是 10 的字符串（汉字算一个字符）。
+
+		//equalTo:"#field"	输入值必须和 #field 相同。
+
+		//max:10	输入值不能大于 10。
+		//min:5	输入值不能小于 5。
+
+		//	remote:"check.php"	使用 ajax 方法调用 check.php 验证输入值。
+		$("#loginForm").validate({
+			rules:{
+				uname:{
+					required:true,
+					//maxlength:10,
+					//minlength:5,
+					remote:{
+						url: "check.php",//后台处理程序
+						type: "post", //数据发送方式
+						dataType: "json",//接受数据格式  
+
+					}
+				}
+			},
+			messages:{
+				uname: {
+					required: "用户名不能为空",
+					remote:"用户已存在"
+				},
+			}
+		});	
+	});
+	
+	</script>
+	
+</body>
+</html>
