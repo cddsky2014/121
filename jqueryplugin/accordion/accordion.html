@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+<body>
+
+	<div style="width:300px;margin:50px;" id="menu" class="list-group">
+		<a class="act list-group-item active">用户管理</a>
+		<div>
+			<a class="list-group-item">增加</a>
+			<a class="list-group-item">删除</a>
+			<a class="list-group-item">修改</a>
+		</div>
+		
+		
+		<a class="act list-group-item active">订单管理</a>
+		<div>
+			<a class="list-group-item">增加</a>
+			<a class="list-group-item">删除</a>
+			<a class="list-group-item">修改</a>
+		</div>
+
+	</div>
+
+
+
+<script src="http://www.runoob.com/try/jquery/jquery-accordion/lib/jquery.js"></script>
+<script src="http://www.runoob.com/try/jquery/jquery-accordion/lib/jquery.dimensions.js"></script>
+<script src="http://www.runoob.com/try/jquery/jquery-accordion/jquery.accordion.js"></script>
+
+
+	<script>
+		$('#menu').accordion({
+			header:'.act'
+		}); 
+	</script>
+</body>
+</html>
