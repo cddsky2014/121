@@ -6,9 +6,23 @@
 </head>
 <body>
 
+<div style="width:300px;margin:50px;" id="menu" class="list-group">
+		<a class="act list-group-item active">用户管理</a>
+		<div>
+			<a class="list-group-item">增加</a>
+			<a class="list-group-item">删除</a>
+			<a class="list-group-item">修改</a>
+		</div>
+		
+		
+		<a class="act list-group-item active">订单管理</a>
+		<div>
+			<a class="list-group-item">增加</a>
+			<a class="list-group-item">删除</a>
+			<a class="list-group-item">修改</a>
+		</div>
 
-	
-
+	</div>
 
 
 	<form id="loginForm" action="">
@@ -23,9 +37,12 @@
 	
 	</form>
 
-	<script src="./jquery-1.9.1.js"></script>
-	<script src="./jquery.validate.min.js"></script>
-	<script src="./messages_zh.min.js"></script>
+
+	<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  	<script src="./validation/jquery.validate.min.js"></script>
+	<script src="./validation/messages_zh.min.js"></script>
+
 	<script>
 	$(function(){
 		//将校验规则写到控件中
@@ -64,7 +81,9 @@
 
 
 
-		 
+		$('#menu').accordion({
+			header:'.act'
+		});
 	});
 	
 	</script>
