@@ -1,0 +1,41 @@
+# yum install libevent
+# yum install gcc
+# yum install gcc-c++
+# wget http://www.memcached.org/files/memcached-1.4.29.tar.gz
+# tar -zxvf memcached-1.4.29.tar.gz
+# ./configure --prefix=/usr/local/memcache
+# make
+# make install
+
+# /usr/local/memcache/bin/memcached -d -m 512 -l 127.0.0.1 -p 10000 -u root
+
+
+windows
+
+安装
+c:\memcached\memcached.exe -d install
+
+注意：你需要使用真实的路径替代 c:\memcached\memcached.exe。
+
+启动和关闭 memcached 服务：
+c:\memcached\memcached.exe -d start
+c:\memcached\memcached.exe -d stop
+
+1. telnet 127.0.0.1 11211
+2. ctrl+] 回车 //开启回显功能
+
+	set runoob 0 900 9
+	memcached
+	STORED
+
+	get runoob
+	VALUE runoob 0 9
+	memcached
+
+3. 添加扩展文件
+E:\wamp64\bin\php\php5.6.16\ext\php_memcache.dll
+
+4. php.ini 配置扩展
+extension=php_memcache.dll
+
+5. echo phpinfo();//查看安装是否成功
