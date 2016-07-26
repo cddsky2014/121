@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+
+	<div class="userList">
+		用户列表
+	
+	</div>
+
+	<ul id="page" class="pagination">
+		
+	
+	</ul>
+	
+	<script src ="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script src="__PUBLIC__/jqPaginator/jqPaginator.js"></script>
+
+	<script>
+	$(function(){
+		/*
+		$('.pagelist li').click(function(){
+			
+			var p=$(this).text();
+
+			$.get('__CONTROLLER__/userList/p/'+p,function(res){
+				$('.userList').html(res);
+		
+			});
+	
+		
+		});
+		
+		
+		*/
+
+
+		$('#page').jqPaginator({
+			totalPages: <{$pagenums}>,
+			visiblePages: 10,
+			currentPage: 1,
+			onPageChange: function (num) {
+		
+
+				$.get('__CONTROLLER__/userList/p/'+num,function(res){
+					$('.userList').html(res);
+			
+				});
+
+
+			}
+		});
+	});
+	
+	</script>	
+</body>
+</html>

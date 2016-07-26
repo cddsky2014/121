@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<table border=1>
+		<tr>
+			<td>用户id</td>
+			<td>用户名</td>
+			<td>登陆时间</td>
+			<td>登陆ip</td>		
+		</tr>
+		
+		<volist name="admins" id="vo">
+		<tr>
+			<td><{$vo['uid']}></td>
+			<td><{$vo['uname']}></td>
+			<td><{$vo['ltime']}></td>
+			<td><{$vo['lip']}></td>		
+		</tr>
+		</volist>
+	</table>
+
+	<div>
+		
+	
+	</div>
+	
+</body>
+</html>
